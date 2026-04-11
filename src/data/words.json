@@ -1,1 +1,3962 @@
-[]
+[
+  {
+    "id": "1",
+    "term": "confirm",
+    "meaning": "確認する",
+    "example": "Please confirm your reservation.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "2",
+    "term": "available",
+    "meaning": "利用可能な",
+    "example": "Is this room available?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "3",
+    "term": "submit",
+    "meaning": "提出する",
+    "example": "Submit your report by Friday.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "4",
+    "term": "request",
+    "meaning": "要請する",
+    "example": "I would like to request a refund.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "5",
+    "term": "provide",
+    "meaning": "提供する",
+    "example": "We provide high-quality service.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "6",
+    "term": "postpone",
+    "meaning": "延期する",
+    "example": "The meeting was postponed until next week.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "7",
+    "term": "announce",
+    "meaning": "発表する",
+    "example": "The company announced a new product.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "8",
+    "term": "attend",
+    "meaning": "出席する",
+    "example": "I will attend the conference.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "9",
+    "term": "contact",
+    "meaning": "連絡する",
+    "example": "Please contact me if you have questions.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "10",
+    "term": "deliver",
+    "meaning": "配達する",
+    "example": "The package will be delivered tomorrow.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "11",
+    "term": "schedule",
+    "meaning": "予定を立てる",
+    "example": "Let's schedule a meeting for Monday.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "12",
+    "term": "improve",
+    "meaning": "改善する",
+    "example": "We need to improve our customer service.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "13",
+    "term": "reduce",
+    "meaning": "削減する",
+    "example": "The goal is to reduce costs.",
+    "level": 600,
+    "category": "Finance"
+  },
+  {
+    "id": "14",
+    "term": "increase",
+    "meaning": "増加させる",
+    "example": "We hope to increase our market share.",
+    "level": 600,
+    "category": "Marketing"
+  },
+  {
+    "id": "15",
+    "term": "prepare",
+    "meaning": "準備する",
+    "example": "Please prepare the documents for the audit.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "16",
+    "term": "receive",
+    "meaning": "受け取る",
+    "example": "Did you receive my email?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "17",
+    "term": "replace",
+    "meaning": "交換する",
+    "example": "We need to replace the old printer.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "18",
+    "term": "require",
+    "meaning": "必要とする",
+    "example": "This job requires excellent communication skills.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "19",
+    "term": "suggest",
+    "meaning": "提案する",
+    "example": "I suggest we take a short break.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "20",
+    "term": "update",
+    "meaning": "更新する",
+    "example": "Please update your contact information.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "21",
+    "term": "advertise",
+    "meaning": "宣伝する",
+    "example": "We should advertise our new product online.",
+    "level": 600,
+    "category": "Marketing"
+  },
+  {
+    "id": "22",
+    "term": "arrange",
+    "meaning": "手配する",
+    "example": "I will arrange a taxi for you.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "23",
+    "term": "cancel",
+    "meaning": "キャンセルする",
+    "example": "The flight was canceled due to bad weather.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "24",
+    "term": "check",
+    "meaning": "点検する",
+    "example": "Check the schedule before you leave.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "25",
+    "term": "complete",
+    "meaning": "完了させる",
+    "example": "Please complete the form.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "26",
+    "term": "verify",
+    "meaning": "検証する",
+    "example": "Please verify your account.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "27",
+    "term": "consider",
+    "meaning": "検討する",
+    "example": "We are considering your proposal.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "28",
+    "term": "decide",
+    "meaning": "決定する",
+    "example": "We need to decide on a location.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "29",
+    "term": "discuss",
+    "meaning": "話し合う",
+    "example": "We will discuss the budget tomorrow.",
+    "level": 600,
+    "category": "Finance"
+  },
+  {
+    "id": "30",
+    "term": "examine",
+    "meaning": "調査する",
+    "example": "The doctor examined the patient.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "31",
+    "term": "explain",
+    "meaning": "説明する",
+    "example": "Can you explain how this works?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "32",
+    "term": "finish",
+    "meaning": "終わらせる",
+    "example": "I need to finish this report.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "33",
+    "term": "follow",
+    "meaning": "従う",
+    "example": "Please follow the instructions.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "34",
+    "term": "handle",
+    "meaning": "扱う",
+    "example": "She handles customer complaints.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "35",
+    "term": "identify",
+    "meaning": "特定する",
+    "example": "We need to identify the problem.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "36",
+    "term": "inform",
+    "meaning": "知らせる",
+    "example": "Please inform us of any changes.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "37",
+    "term": "install",
+    "meaning": "設置する",
+    "example": "We are installing new software.",
+    "level": 600,
+    "category": "Technology"
+  },
+  {
+    "id": "38",
+    "term": "invite",
+    "meaning": "招待する",
+    "example": "We invited him to the party.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "39",
+    "term": "join",
+    "meaning": "参加する",
+    "example": "Would you like to join us for lunch?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "40",
+    "term": "manage",
+    "meaning": "管理する",
+    "example": "He manages a team of ten people.",
+    "level": 600,
+    "category": "Management"
+  },
+  {
+    "id": "41",
+    "term": "mention",
+    "meaning": "言及する",
+    "example": "He mentioned the project during the meeting.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "42",
+    "term": "notice",
+    "meaning": "気づく",
+    "example": "Did you notice the sign?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "43",
+    "term": "offer",
+    "meaning": "申し出る",
+    "example": "They offered me a job.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "44",
+    "term": "organize",
+    "meaning": "整理する",
+    "example": "I need to organize my files.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "45",
+    "term": "participate",
+    "meaning": "参加する",
+    "example": "Many people participated in the event.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "46",
+    "term": "perform",
+    "meaning": "行う",
+    "example": "The team performed well.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "47",
+    "term": "promote",
+    "meaning": "昇進させる",
+    "example": "He was promoted to manager.",
+    "level": 600,
+    "category": "Management"
+  },
+  {
+    "id": "48",
+    "term": "publish",
+    "meaning": "出版する",
+    "example": "The book was published last year.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "49",
+    "term": "purchase",
+    "meaning": "購入する",
+    "example": "I would like to purchase this item.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "50",
+    "term": "recommend",
+    "meaning": "推薦する",
+    "example": "I recommend this restaurant.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "51",
+    "term": "register",
+    "meaning": "登録する",
+    "example": "You need to register for the workshop.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "52",
+    "term": "remind",
+    "meaning": "思い出させる",
+    "example": "Please remind me to call him.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "53",
+    "term": "repair",
+    "meaning": "修理する",
+    "example": "The car needs to be repaired.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "54",
+    "term": "reserve",
+    "meaning": "予約する",
+    "example": "I would like to reserve a table.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "55",
+    "term": "review",
+    "meaning": "復習する、見直す",
+    "example": "Review the report before the meeting.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "56",
+    "term": "select",
+    "meaning": "選択する",
+    "example": "Select the best option.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "57",
+    "term": "solve",
+    "meaning": "解決する",
+    "example": "We need to solve this issue.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "58",
+    "term": "transfer",
+    "meaning": "転送する、移動する",
+    "example": "He was transferred to the London office.",
+    "level": 600,
+    "category": "Management"
+  },
+  {
+    "id": "59",
+    "term": "visit",
+    "meaning": "訪問する",
+    "example": "I will visit the factory next week.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "60",
+    "term": "welcome",
+    "meaning": "歓迎する",
+    "example": "We welcome your feedback.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "61",
+    "term": "accept",
+    "meaning": "受け入れる",
+    "example": "They accepted our proposal.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "62",
+    "term": "achieve",
+    "meaning": "達成する",
+    "example": "We achieved our sales targets.",
+    "level": 600,
+    "category": "Finance"
+  },
+  {
+    "id": "63",
+    "term": "adjust",
+    "meaning": "調整する",
+    "example": "You can adjust the volume.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "64",
+    "term": "advise",
+    "meaning": "助言する",
+    "example": "I advise you to wait.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "65",
+    "term": "allow",
+    "meaning": "許可する",
+    "example": "Smoking is not allowed here.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "66",
+    "term": "analyze",
+    "meaning": "分析する",
+    "example": "We need to analyze the data.",
+    "level": 600,
+    "category": "Research"
+  },
+  {
+    "id": "67",
+    "term": "apply",
+    "meaning": "応募する、適用する",
+    "example": "I applied for the job.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "68",
+    "term": "appreciate",
+    "meaning": "感謝する",
+    "example": "I appreciate your help.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "69",
+    "term": "approve",
+    "meaning": "承認する",
+    "example": "The manager approved the request.",
+    "level": 600,
+    "category": "Management"
+  },
+  {
+    "id": "70",
+    "term": "assist",
+    "meaning": "手伝う",
+    "example": "Can you assist me with this task?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "71",
+    "term": "assume",
+    "meaning": "想定する",
+    "example": "I assume you are busy.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "72",
+    "term": "attach",
+    "meaning": "添付する",
+    "example": "Please attach the file to the email.",
+    "level": 600,
+    "category": "Office"
+  },
+  {
+    "id": "73",
+    "term": "avoid",
+    "meaning": "避ける",
+    "example": "Avoid making mistakes.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "74",
+    "term": "believe",
+    "meaning": "信じる",
+    "example": "I believe you are right.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "75",
+    "term": "benefit",
+    "meaning": "利益を得る",
+    "example": "The company will benefit from the deal.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "76",
+    "term": "borrow",
+    "meaning": "借りる",
+    "example": "Can I borrow your pen?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "77",
+    "term": "calculate",
+    "meaning": "計算する",
+    "example": "We need to calculate the total cost.",
+    "level": 600,
+    "category": "Finance"
+  },
+  {
+    "id": "78",
+    "term": "cause",
+    "meaning": "原因となる",
+    "example": "The rain caused a delay.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "79",
+    "term": "celebrate",
+    "meaning": "祝う",
+    "example": "We are celebrating his birthday.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "80",
+    "term": "change",
+    "meaning": "変える",
+    "example": "I need to change my password.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "81",
+    "term": "choose",
+    "meaning": "選ぶ",
+    "example": "Choose the correct answer.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "82",
+    "term": "collect",
+    "meaning": "集める",
+    "example": "I collect stamps.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "83",
+    "term": "compare",
+    "meaning": "比較する",
+    "example": "Compare the two products.",
+    "level": 600,
+    "category": "Marketing"
+  },
+  {
+    "id": "84",
+    "term": "complain",
+    "meaning": "不平を言う",
+    "example": "He complained about the service.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "85",
+    "term": "continue",
+    "meaning": "続ける",
+    "example": "Please continue your work.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "86",
+    "term": "contribute",
+    "meaning": "貢献する",
+    "example": "He contributed to the success.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "87",
+    "term": "control",
+    "meaning": "制御する",
+    "example": "You can control the temperature.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "88",
+    "term": "convince",
+    "meaning": "納得させる",
+    "example": "I tried to convince him.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "89",
+    "term": "create",
+    "meaning": "創造する",
+    "example": "We need to create a new design.",
+    "level": 600,
+    "category": "Technology"
+  },
+  {
+    "id": "90",
+    "term": "damage",
+    "meaning": "損害を与える",
+    "example": "The storm damaged the roof.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "91",
+    "term": "depend",
+    "meaning": "依存する",
+    "example": "It depends on the weather.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "92",
+    "term": "describe",
+    "meaning": "説明する",
+    "example": "Can you describe the person?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "93",
+    "term": "deserve",
+    "meaning": "値する",
+    "example": "You deserve a promotion.",
+    "level": 600,
+    "category": "Management"
+  },
+  {
+    "id": "94",
+    "term": "design",
+    "meaning": "設計する",
+    "example": "He designed the building.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "95",
+    "term": "destroy",
+    "meaning": "破壊する",
+    "example": "The fire destroyed the house.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "96",
+    "term": "determine",
+    "meaning": "決定する",
+    "example": "We need to determine the cause.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "97",
+    "term": "develop",
+    "meaning": "開発する",
+    "example": "They are developing a new app.",
+    "level": 600,
+    "category": "Technology"
+  },
+  {
+    "id": "98",
+    "term": "disappear",
+    "meaning": "消える",
+    "example": "The sun disappeared behind the clouds.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "99",
+    "term": "discover",
+    "meaning": "発見する",
+    "example": "He discovered a new star.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "100",
+    "term": "display",
+    "meaning": "展示する",
+    "example": "The products are displayed in the window.",
+    "level": 600,
+    "category": "Marketing"
+  },
+  {
+    "id": "101",
+    "term": "implement",
+    "meaning": "実行する",
+    "example": "We need to implement the new policy.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "102",
+    "term": "significant",
+    "meaning": "重要な、かなりの",
+    "example": "There was a significant increase in sales.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "103",
+    "term": "alternative",
+    "meaning": "代わりの",
+    "example": "We are looking for an alternative solution.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "104",
+    "term": "procedure",
+    "meaning": "手順",
+    "example": "Follow the safety procedure.",
+    "level": 730,
+    "category": "Office"
+  },
+  {
+    "id": "105",
+    "term": "negotiate",
+    "meaning": "交渉する",
+    "example": "They are negotiating a new contract.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "106",
+    "term": "acquire",
+    "meaning": "買収する、習得する",
+    "example": "The company was acquired by a rival.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "107",
+    "term": "comply",
+    "meaning": "従う、遵守する",
+    "example": "We must comply with the regulations.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "108",
+    "term": "distribute",
+    "meaning": "配布する",
+    "example": "The flyers were distributed to the public.",
+    "level": 730,
+    "category": "Marketing"
+  },
+  {
+    "id": "109",
+    "term": "evaluate",
+    "meaning": "評価する",
+    "example": "We need to evaluate the performance.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "110",
+    "term": "modify",
+    "meaning": "修正する",
+    "example": "The plan was modified slightly.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "111",
+    "term": "allocate",
+    "meaning": "割り当てる",
+    "example": "We need to allocate resources efficiently.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "112",
+    "term": "anticipate",
+    "meaning": "予想する",
+    "example": "We anticipate a high demand.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "113",
+    "term": "approximate",
+    "meaning": "おおよその",
+    "example": "The approximate cost is $500.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "114",
+    "term": "attribute",
+    "meaning": "〜のせいにする",
+    "example": "The success was attributed to hard work.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "115",
+    "term": "clarify",
+    "meaning": "明確にする",
+    "example": "Could you clarify your point?",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "116",
+    "term": "coincide",
+    "meaning": "同時に起こる",
+    "example": "The event coincides with my vacation.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "117",
+    "term": "commence",
+    "meaning": "開始する",
+    "example": "The ceremony will commence at 10 AM.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "118",
+    "term": "compensate",
+    "meaning": "補償する",
+    "example": "They will compensate you for the loss.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "119",
+    "term": "component",
+    "meaning": "構成要素",
+    "example": "This is a key component of the system.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "120",
+    "term": "comprise",
+    "meaning": "〜から成る",
+    "example": "The team comprises five members.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "121",
+    "term": "concentrate",
+    "meaning": "集中する",
+    "example": "I need to concentrate on my work.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "122",
+    "term": "conclude",
+    "meaning": "結論づける",
+    "example": "The report concluded that changes are needed.",
+    "level": 730,
+    "category": "Research"
+  },
+  {
+    "id": "123",
+    "term": "conduct",
+    "meaning": "行う",
+    "example": "We conducted a survey.",
+    "level": 730,
+    "category": "Research"
+  },
+  {
+    "id": "124",
+    "term": "confine",
+    "meaning": "制限する",
+    "example": "Please confine your remarks to the topic.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "125",
+    "term": "consequent",
+    "meaning": "結果として起こる",
+    "example": "The consequent loss was huge.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "126",
+    "term": "considerable",
+    "meaning": "かなりの",
+    "example": "There is considerable interest in the project.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "127",
+    "term": "consist",
+    "meaning": "〜から成る",
+    "example": "The committee consists of ten people.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "128",
+    "term": "constitute",
+    "meaning": "構成する",
+    "example": "This constitutes a violation of the rules.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "129",
+    "term": "constrain",
+    "meaning": "制約する",
+    "example": "We are constrained by the budget.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "130",
+    "term": "consult",
+    "meaning": "相談する",
+    "example": "You should consult a specialist.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "131",
+    "term": "consume",
+    "meaning": "消費する",
+    "example": "The car consumes a lot of fuel.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "132",
+    "term": "controversy",
+    "meaning": "論争",
+    "example": "The new law caused a controversy.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "133",
+    "term": "convene",
+    "meaning": "招集する",
+    "example": "The board will convene next week.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "134",
+    "term": "coordinate",
+    "meaning": "調整する",
+    "example": "We need to coordinate our efforts.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "135",
+    "term": "core",
+    "meaning": "核心",
+    "example": "This is the core issue.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "136",
+    "term": "corporate",
+    "meaning": "企業の",
+    "example": "We have a corporate policy.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "137",
+    "term": "correspond",
+    "meaning": "一致する",
+    "example": "The results correspond to our expectations.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "138",
+    "term": "criteria",
+    "meaning": "基準",
+    "example": "What are the selection criteria?",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "139",
+    "term": "deduce",
+    "meaning": "推論する",
+    "example": "We can deduce the answer from the evidence.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "140",
+    "term": "demonstrate",
+    "meaning": "実演する、証明する",
+    "example": "He demonstrated the new software.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "141",
+    "term": "deny",
+    "meaning": "否定する",
+    "example": "He denied the allegations.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "142",
+    "term": "depress",
+    "meaning": "低下させる",
+    "example": "The news depressed the market.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "143",
+    "term": "derive",
+    "meaning": "由来する",
+    "example": "The word is derived from Latin.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "144",
+    "term": "deviate",
+    "meaning": "逸脱する",
+    "example": "Do not deviate from the plan.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "145",
+    "term": "device",
+    "meaning": "装置",
+    "example": "This is a useful device.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "146",
+    "term": "devote",
+    "meaning": "捧げる",
+    "example": "He devoted his life to science.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "147",
+    "term": "dimension",
+    "meaning": "寸法、次元",
+    "example": "What are the dimensions of the box?",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "148",
+    "term": "diminish",
+    "meaning": "減少する",
+    "example": "The noise diminished over time.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "149",
+    "term": "discrete",
+    "meaning": "個別の",
+    "example": "These are discrete units.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "150",
+    "term": "discriminate",
+    "meaning": "差別する",
+    "example": "It is illegal to discriminate against anyone.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "151",
+    "term": "displace",
+    "meaning": "取って代わる",
+    "example": "New technology displaced old methods.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "153",
+    "term": "dispose",
+    "meaning": "処分する",
+    "example": "Dispose of the waste properly.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "154",
+    "term": "distinct",
+    "meaning": "はっきり異なる",
+    "example": "There are two distinct groups.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "155",
+    "term": "distort",
+    "meaning": "歪める",
+    "example": "The facts were distorted.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "156",
+    "term": "draft",
+    "meaning": "下書き",
+    "example": "I need to finish the first draft.",
+    "level": 730,
+    "category": "Office"
+  },
+  {
+    "id": "157",
+    "term": "drama",
+    "meaning": "劇、ドラマ",
+    "example": "The situation was full of drama.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "158",
+    "term": "duration",
+    "meaning": "期間",
+    "example": "The duration of the flight is ten hours.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "159",
+    "term": "dynamic",
+    "meaning": "動的な",
+    "example": "The market is very dynamic.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "160",
+    "term": "eliminate",
+    "meaning": "排除する",
+    "example": "We need to eliminate waste.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "161",
+    "term": "emerge",
+    "meaning": "現れる",
+    "example": "New problems emerged.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "162",
+    "term": "emphasis",
+    "meaning": "強調",
+    "example": "The emphasis is on quality.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "163",
+    "term": "empirical",
+    "meaning": "経験的な",
+    "example": "We have empirical evidence.",
+    "level": 730,
+    "category": "Research"
+  },
+  {
+    "id": "164",
+    "term": "enable",
+    "meaning": "可能にする",
+    "example": "This software enables us to work faster.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "165",
+    "term": "encounter",
+    "meaning": "遭遇する",
+    "example": "We encountered some difficulties.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "166",
+    "term": "energy",
+    "meaning": "エネルギー",
+    "example": "We need to save energy.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "167",
+    "term": "enforce",
+    "meaning": "施行する",
+    "example": "The rules must be enforced.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "168",
+    "term": "enhance",
+    "meaning": "高める",
+    "example": "We want to enhance our reputation.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "169",
+    "term": "enormous",
+    "meaning": "巨大な",
+    "example": "The project was an enormous success.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "170",
+    "term": "ensure",
+    "meaning": "確実にする",
+    "example": "Please ensure that the door is locked.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "171",
+    "term": "entity",
+    "meaning": "実体",
+    "example": "The company is a separate legal entity.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "172",
+    "term": "environment",
+    "meaning": "環境",
+    "example": "We care about the environment.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "173",
+    "term": "equation",
+    "meaning": "方程式",
+    "example": "He solved the equation.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "174",
+    "term": "equip",
+    "meaning": "装備する",
+    "example": "The gym is well equipped.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "175",
+    "term": "equivalent",
+    "meaning": "同等の",
+    "example": "The two amounts are equivalent.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "176",
+    "term": "erode",
+    "meaning": "侵食する",
+    "example": "The coastline is eroding.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "177",
+    "term": "error",
+    "meaning": "誤り",
+    "example": "There was an error in the calculation.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "178",
+    "term": "establish",
+    "meaning": "設立する",
+    "example": "The company was established in 1990.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "179",
+    "term": "estate",
+    "meaning": "財産、不動産",
+    "example": "He owns a large estate.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "180",
+    "term": "estimate",
+    "meaning": "見積もる",
+    "example": "We estimate the cost at $1000.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "181",
+    "term": "ethic",
+    "meaning": "倫理",
+    "example": "We have a strong work ethic.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "182",
+    "term": "ethnic",
+    "meaning": "民族の",
+    "example": "The city has many ethnic groups.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "184",
+    "term": "eventual",
+    "meaning": "最終的な",
+    "example": "The eventual outcome was positive.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "185",
+    "term": "evident",
+    "meaning": "明らかな",
+    "example": "It was evident that he was lying.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "186",
+    "term": "evolve",
+    "meaning": "進化する",
+    "example": "The business has evolved over the years.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "187",
+    "term": "exceed",
+    "meaning": "超える",
+    "example": "The cost exceeded the budget.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "188",
+    "term": "exclude",
+    "meaning": "除外する",
+    "example": "The price excludes tax.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "189",
+    "term": "exhibit",
+    "meaning": "展示する",
+    "example": "The artist exhibited his work.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "190",
+    "term": "expand",
+    "meaning": "拡大する",
+    "example": "We are expanding our business.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "191",
+    "term": "expert",
+    "meaning": "専門家",
+    "example": "He is an expert in the field.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "192",
+    "term": "explicit",
+    "meaning": "明白な",
+    "example": "He gave explicit instructions.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "193",
+    "term": "exploit",
+    "meaning": "利用する、搾取する",
+    "example": "We should exploit new opportunities.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "194",
+    "term": "export",
+    "meaning": "輸出する",
+    "example": "The company exports cars.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "195",
+    "term": "expose",
+    "meaning": "さらす",
+    "example": "The scandal was exposed.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "196",
+    "term": "external",
+    "meaning": "外部の",
+    "example": "We need an external audit.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "197",
+    "term": "extract",
+    "meaning": "抽出する",
+    "example": "We extracted the data from the report.",
+    "level": 730,
+    "category": "Research"
+  },
+  {
+    "id": "198",
+    "term": "facilitate",
+    "meaning": "促進する",
+    "example": "The new system will facilitate communication.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "199",
+    "term": "factor",
+    "meaning": "要因",
+    "example": "Cost is a major factor.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "200",
+    "term": "feature",
+    "meaning": "特徴",
+    "example": "This is a unique feature.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "201",
+    "term": "comprehensive",
+    "meaning": "包括的な",
+    "example": "A comprehensive study was conducted.",
+    "level": 860,
+    "category": "Research"
+  },
+  {
+    "id": "202",
+    "term": "preliminary",
+    "meaning": "予備の、導入の",
+    "example": "The preliminary results are promising.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "203",
+    "term": "accumulate",
+    "meaning": "蓄積する",
+    "example": "He accumulated a lot of experience.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "204",
+    "term": "unanimous",
+    "meaning": "満場一致の",
+    "example": "The decision was unanimous.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "205",
+    "term": "deteriorate",
+    "meaning": "悪化する",
+    "example": "The weather condition deteriorated.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "206",
+    "term": "alleviate",
+    "meaning": "軽減する",
+    "example": "The medicine helped alleviate the pain.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "207",
+    "term": "collaborate",
+    "meaning": "協力する",
+    "example": "We collaborated on the project.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "208",
+    "term": "discrepancy",
+    "meaning": "不一致、相違",
+    "example": "There was a discrepancy in the accounts.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "209",
+    "term": "innovative",
+    "meaning": "革新的な",
+    "example": "The company is known for its innovative designs.",
+    "level": 860,
+    "category": "Technology"
+  },
+  {
+    "id": "210",
+    "term": "prevalent",
+    "meaning": "普及している",
+    "example": "The flu is prevalent this winter.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "211",
+    "term": "ambiguous",
+    "meaning": "曖昧な",
+    "example": "The results were ambiguous.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "212",
+    "term": "arbitrary",
+    "meaning": "任意の、独断的な",
+    "example": "The decision was arbitrary.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "213",
+    "term": "ascertain",
+    "meaning": "確かめる",
+    "example": "We need to ascertain the facts.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "214",
+    "term": "attain",
+    "meaning": "達成する",
+    "example": "He attained his goal.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "215",
+    "term": "coherent",
+    "meaning": "一貫した",
+    "example": "He gave a coherent explanation.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "216",
+    "term": "commodity",
+    "meaning": "商品、日用品",
+    "example": "Oil is a valuable commodity.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "217",
+    "term": "complement",
+    "meaning": "補完する",
+    "example": "The two styles complement each other.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "218",
+    "term": "conform",
+    "meaning": "従う",
+    "example": "You must conform to the rules.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "219",
+    "term": "contradict",
+    "meaning": "矛盾する",
+    "example": "The two reports contradict each other.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "220",
+    "term": "crucial",
+    "meaning": "極めて重要な",
+    "example": "This is a crucial decision.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "221",
+    "term": "currency",
+    "meaning": "通貨",
+    "example": "The local currency is weak.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "222",
+    "term": "denote",
+    "meaning": "示す",
+    "example": "The red color denotes danger.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "223",
+    "term": "deviation",
+    "meaning": "逸脱",
+    "example": "There was a slight deviation from the plan.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "224",
+    "term": "displacement",
+    "meaning": "置換、移動",
+    "example": "The displacement of people was huge.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "225",
+    "term": "distinction",
+    "meaning": "区別",
+    "example": "There is a clear distinction between the two.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "226",
+    "term": "distortion",
+    "meaning": "歪み",
+    "example": "There was some distortion in the sound.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "227",
+    "term": "dominant",
+    "meaning": "支配的な",
+    "example": "The company is dominant in the market.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "228",
+    "term": "elicit",
+    "meaning": "引き出す",
+    "example": "The question elicited a response.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "230",
+    "term": "erroneous",
+    "meaning": "誤った",
+    "example": "The information was erroneous.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "231",
+    "term": "evacuation",
+    "meaning": "避難",
+    "example": "The evacuation was successful.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "232",
+    "term": "fluctuation",
+    "meaning": "変動",
+    "example": "There are fluctuations in the price.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "233",
+    "term": "formulate",
+    "meaning": "策定する",
+    "example": "We need to formulate a strategy.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "234",
+    "term": "guarantee",
+    "meaning": "保証する",
+    "example": "We guarantee the quality.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "235",
+    "term": "hypothesis",
+    "meaning": "仮説",
+    "example": "The hypothesis was tested.",
+    "level": 860,
+    "category": "Research"
+  },
+  {
+    "id": "236",
+    "term": "identical",
+    "meaning": "同一の",
+    "example": "The two cars are identical.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "237",
+    "term": "implicit",
+    "meaning": "暗黙の",
+    "example": "There was an implicit agreement.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "238",
+    "term": "incentive",
+    "meaning": "動機、報奨金",
+    "example": "They offered an incentive to work harder.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "239",
+    "term": "incidence",
+    "meaning": "発生率",
+    "example": "The incidence of the disease is rising.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "240",
+    "term": "inclination",
+    "meaning": "傾向",
+    "example": "He has an inclination to be lazy.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "241",
+    "term": "index",
+    "meaning": "索引、指標",
+    "example": "The price index is rising.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "242",
+    "term": "inevitable",
+    "meaning": "避けられない",
+    "example": "Change is inevitable.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "243",
+    "term": "infrastructure",
+    "meaning": "インフラ",
+    "example": "The infrastructure needs improvement.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "244",
+    "term": "inherent",
+    "meaning": "固有の",
+    "example": "There are inherent risks.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "245",
+    "term": "inhibitor",
+    "meaning": "抑制剤、阻害要因",
+    "example": "This is a growth inhibitor.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "246",
+    "term": "initial",
+    "meaning": "最初の",
+    "example": "The initial reaction was positive.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "247",
+    "term": "innovation",
+    "meaning": "革新",
+    "example": "Innovation is key to success.",
+    "level": 860,
+    "category": "Technology"
+  },
+  {
+    "id": "248",
+    "term": "insight",
+    "meaning": "洞察",
+    "example": "He has deep insight into the matter.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "249",
+    "term": "inspection",
+    "meaning": "検査",
+    "example": "The building passed the inspection.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "250",
+    "term": "instance",
+    "meaning": "例",
+    "example": "This is a clear instance of fraud.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "251",
+    "term": "institute",
+    "meaning": "機関",
+    "example": "He works at a research institute.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "252",
+    "term": "integration",
+    "meaning": "統合",
+    "example": "The integration of the two systems was difficult.",
+    "level": 860,
+    "category": "Technology"
+  },
+  {
+    "id": "253",
+    "term": "intensity",
+    "meaning": "強度",
+    "example": "The intensity of the light was high.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "254",
+    "term": "interaction",
+    "meaning": "相互作用",
+    "example": "There is a lot of interaction between the two.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "255",
+    "term": "intermediate",
+    "meaning": "中間の",
+    "example": "This is an intermediate level.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "256",
+    "term": "internal",
+    "meaning": "内部の",
+    "example": "We have an internal investigation.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "257",
+    "term": "interpretation",
+    "meaning": "解釈",
+    "example": "There are different interpretations of the law.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "258",
+    "term": "interval",
+    "meaning": "間隔",
+    "example": "The buses run at ten-minute intervals.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "259",
+    "term": "intervention",
+    "meaning": "介入",
+    "example": "The government's intervention was necessary.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "260",
+    "term": "intrinsic",
+    "meaning": "本来備わっている",
+    "example": "The design has intrinsic value.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "261",
+    "term": "investigation",
+    "meaning": "調査",
+    "example": "The investigation is ongoing.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "262",
+    "term": "investment",
+    "meaning": "投資",
+    "example": "This is a good investment.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "263",
+    "term": "invoke",
+    "meaning": "呼び出す、発動する",
+    "example": "The law was invoked to stop the strike.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "264",
+    "term": "irrational",
+    "meaning": "不合理な",
+    "example": "His fear was irrational.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "265",
+    "term": "irrelevance",
+    "meaning": "無関係",
+    "example": "The point he made was of irrelevance.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "266",
+    "term": "isolate",
+    "meaning": "隔離する",
+    "example": "The patient was isolated.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "267",
+    "term": "issue",
+    "meaning": "問題、発行",
+    "example": "This is a major issue.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "268",
+    "term": "item",
+    "meaning": "項目",
+    "example": "There are five items on the list.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "269",
+    "term": "job",
+    "meaning": "仕事",
+    "example": "He is looking for a job.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "270",
+    "term": "journal",
+    "meaning": "雑誌、日記",
+    "example": "He published an article in a medical journal.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "271",
+    "term": "justify",
+    "meaning": "正当化する",
+    "example": "How can you justify the cost?",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "272",
+    "term": "label",
+    "meaning": "ラベル",
+    "example": "Check the label for instructions.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "273",
+    "term": "labor",
+    "meaning": "労働",
+    "example": "The cost of labor is rising.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "274",
+    "term": "layer",
+    "meaning": "層",
+    "example": "There is a layer of dust on the table.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "275",
+    "term": "lecture",
+    "meaning": "講義",
+    "example": "He gave a lecture on history.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "276",
+    "term": "legal",
+    "meaning": "法律の",
+    "example": "You should seek legal advice.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "277",
+    "term": "legislation",
+    "meaning": "立法",
+    "example": "New legislation is being introduced.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "278",
+    "term": "levy",
+    "meaning": "徴収する",
+    "example": "A tax was levied on luxury goods.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "279",
+    "term": "liberal",
+    "meaning": "自由主義の",
+    "example": "He has liberal views.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "280",
+    "term": "license",
+    "meaning": "免許",
+    "example": "Do you have a driver's license?",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "281",
+    "term": "likewise",
+    "meaning": "同様に",
+    "example": "He did likewise.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "282",
+    "term": "link",
+    "meaning": "関連付ける",
+    "example": "The two events are linked.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "283",
+    "term": "location",
+    "meaning": "場所",
+    "example": "The location is perfect.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "284",
+    "term": "logic",
+    "meaning": "論理",
+    "example": "There is no logic in his argument.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "285",
+    "term": "maintain",
+    "meaning": "維持する",
+    "example": "You need to maintain the equipment.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "286",
+    "term": "major",
+    "meaning": "主要な",
+    "example": "This is a major problem.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "287",
+    "term": "manipulate",
+    "meaning": "操る",
+    "example": "He tried to manipulate the data.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "288",
+    "term": "manual",
+    "meaning": "手動の、説明書",
+    "example": "Read the manual carefully.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "289",
+    "term": "margin",
+    "meaning": "余白、利益",
+    "example": "The profit margin is low.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "290",
+    "term": "mature",
+    "meaning": "成熟した",
+    "example": "He is very mature for his age.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "291",
+    "term": "maximize",
+    "meaning": "最大化する",
+    "example": "We need to maximize our profits.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "292",
+    "term": "mechanism",
+    "meaning": "仕組み",
+    "example": "The mechanism is complex.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "293",
+    "term": "media",
+    "meaning": "メディア",
+    "example": "The media reported the news.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "294",
+    "term": "mediate",
+    "meaning": "仲裁する",
+    "example": "He mediated the dispute.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "295",
+    "term": "medical",
+    "meaning": "医療の",
+    "example": "He needs medical attention.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "296",
+    "term": "medium",
+    "meaning": "媒体、中間の",
+    "example": "English is the medium of instruction.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "297",
+    "term": "mental",
+    "meaning": "精神の",
+    "example": "Mental health is important.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "298",
+    "term": "method",
+    "meaning": "方法",
+    "example": "We need a new method.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "299",
+    "term": "migrate",
+    "meaning": "移住する",
+    "example": "Birds migrate south in winter.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "300",
+    "term": "military",
+    "meaning": "軍事の",
+    "example": "He joined the military.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "301",
+    "term": "meticulous",
+    "meaning": "細心の注意を払った",
+    "example": "She is meticulous about her work.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "302",
+    "term": "adversity",
+    "meaning": "逆境",
+    "example": "He overcame many adversities.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "303",
+    "term": "contingency",
+    "meaning": "不測の事態",
+    "example": "We have a contingency plan.",
+    "level": 990,
+    "category": "Management"
+  },
+  {
+    "id": "304",
+    "term": "scrutinize",
+    "meaning": "綿密に調べる",
+    "example": "The documents were scrutinized by experts.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "306",
+    "term": "augment",
+    "meaning": "増強する",
+    "example": "He augmented his income with a part-time job.",
+    "level": 990,
+    "category": "Finance"
+  },
+  {
+    "id": "307",
+    "term": "curtail",
+    "meaning": "削減する",
+    "example": "The budget was curtailed significantly.",
+    "level": 990,
+    "category": "Finance"
+  },
+  {
+    "id": "308",
+    "term": "exemplary",
+    "meaning": "模範的な",
+    "example": "Her performance was exemplary.",
+    "level": 990,
+    "category": "Management"
+  },
+  {
+    "id": "309",
+    "term": "imminent",
+    "meaning": "差し迫った",
+    "example": "The storm is imminent.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "310",
+    "term": "resilient",
+    "meaning": "回復力のある",
+    "example": "She is a resilient person.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "311",
+    "term": "aberration",
+    "meaning": "脱線、異常",
+    "example": "The error was a temporary aberration.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "312",
+    "term": "acquiesce",
+    "meaning": "黙認する",
+    "example": "He acquiesced to their demands.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "313",
+    "term": "alacrity",
+    "meaning": "敏活、意気込み",
+    "example": "He accepted the invitation with alacrity.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "314",
+    "term": "amiable",
+    "meaning": "愛想の良い",
+    "example": "He is an amiable young man.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "315",
+    "term": "appease",
+    "meaning": "なだめる",
+    "example": "They tried to appease the protesters.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "316",
+    "term": "arcane",
+    "meaning": "難解な、秘密の",
+    "example": "The rules are arcane and difficult to follow.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "317",
+    "term": "avarice",
+    "meaning": "強欲",
+    "example": "He was driven by avarice.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "318",
+    "term": "brazen",
+    "meaning": "厚かましい",
+    "example": "It was a brazen lie.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "319",
+    "term": "brusque",
+    "meaning": "ぶっきらぼうな",
+    "example": "He was brusque with the staff.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "320",
+    "term": "cajole",
+    "meaning": "言いくるめる",
+    "example": "He cajoled her into going.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "321",
+    "term": "callous",
+    "meaning": "冷淡な",
+    "example": "He was callous about their suffering.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "322",
+    "term": "candor",
+    "meaning": "素直さ、誠実さ",
+    "example": "I appreciate your candor.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "323",
+    "term": "chide",
+    "meaning": "叱る",
+    "example": "She chided him for being late.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "324",
+    "term": "circumspect",
+    "meaning": "慎重な",
+    "example": "He is circumspect in his dealings.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "325",
+    "term": "clandestine",
+    "meaning": "秘密の",
+    "example": "They had a clandestine meeting.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "326",
+    "term": "coerce",
+    "meaning": "強要する",
+    "example": "They were coerced into signing.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "327",
+    "term": "complacency",
+    "meaning": "自己満足",
+    "example": "There is no room for complacency.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "328",
+    "term": "confidant",
+    "meaning": "腹心の友",
+    "example": "He is my closest confidant.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "329",
+    "term": "connive",
+    "meaning": "黙認する、共謀する",
+    "example": "They connived to steal the money.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "330",
+    "term": "cumulative",
+    "meaning": "累積的な",
+    "example": "The cumulative effect was significant.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "331",
+    "term": "debase",
+    "meaning": "低下させる",
+    "example": "The currency was debased.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "332",
+    "term": "decry",
+    "meaning": "非難する",
+    "example": "They decried the violence.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "333",
+    "term": "deferential",
+    "meaning": "敬意を払う",
+    "example": "He was deferential to his elders.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "334",
+    "term": "demure",
+    "meaning": "控えめな",
+    "example": "She is a demure young woman.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "335",
+    "term": "deride",
+    "meaning": "嘲笑する",
+    "example": "They derided his efforts.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "336",
+    "term": "despot",
+    "meaning": "専制君主",
+    "example": "He was a cruel despot.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "337",
+    "term": "diligent",
+    "meaning": "勤勉な",
+    "example": "He is a diligent student.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "338",
+    "term": "elated",
+    "meaning": "大喜びの",
+    "example": "He was elated by the news.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "339",
+    "term": "eloquent",
+    "meaning": "雄弁な",
+    "example": "He gave an eloquent speech.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "340",
+    "term": "embezzle",
+    "meaning": "横領する",
+    "example": "He embezzled millions from the company.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "341",
+    "term": "empathy",
+    "meaning": "共感",
+    "example": "He has a lot of empathy for others.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "342",
+    "term": "enmity",
+    "meaning": "敵意",
+    "example": "There is a long-standing enmity between them.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "343",
+    "term": "erudite",
+    "meaning": "学識のある",
+    "example": "He is an erudite scholar.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "344",
+    "term": "extol",
+    "meaning": "絶賛する",
+    "example": "They extolled the virtues of the new system.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "345",
+    "term": "fabricate",
+    "meaning": "捏造する",
+    "example": "The evidence was fabricated.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "346",
+    "term": "feral",
+    "meaning": "野生の",
+    "example": "They encountered feral cats.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "347",
+    "term": "flabbergasted",
+    "meaning": "仰天した",
+    "example": "I was flabbergasted by the news.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "348",
+    "term": "forsake",
+    "meaning": "見捨てる",
+    "example": "He forsook his family.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "349",
+    "term": "fractious",
+    "meaning": "怒りっぽい",
+    "example": "The children were fractious.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "350",
+    "term": "furtive",
+    "meaning": "こそこそした",
+    "example": "He cast a furtive glance.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "351",
+    "term": "gluttony",
+    "meaning": "暴飲暴食",
+    "example": "Gluttony is a sin.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "352",
+    "term": "gratuitous",
+    "meaning": "不必要な、無料の",
+    "example": "The violence was gratuitous.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "353",
+    "term": "haughty",
+    "meaning": "傲慢な",
+    "example": "She has a haughty attitude.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "354",
+    "term": "hypocrisy",
+    "meaning": "偽善",
+    "example": "I can't stand his hypocrisy.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "355",
+    "term": "impeccable",
+    "meaning": "完璧な",
+    "example": "Her English is impeccable.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "356",
+    "term": "impudent",
+    "meaning": "生意気な",
+    "example": "He was an impudent child.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "357",
+    "term": "incisive",
+    "meaning": "鋭い",
+    "example": "He made some incisive remarks.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "358",
+    "term": "indolent",
+    "meaning": "怠惰な",
+    "example": "He is an indolent person.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "359",
+    "term": "inept",
+    "meaning": "不適切な、無能な",
+    "example": "He is inept at his job.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "360",
+    "term": "infamy",
+    "meaning": "悪名",
+    "example": "The day will live in infamy.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "361",
+    "term": "inhibited",
+    "meaning": "抑制された",
+    "example": "He felt inhibited in her presence.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "362",
+    "term": "innate",
+    "meaning": "先天的な",
+    "example": "He has an innate talent for music.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "363",
+    "term": "insatiable",
+    "meaning": "飽くことのない",
+    "example": "He has an insatiable appetite.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "364",
+    "term": "insular",
+    "meaning": "島国根性の、孤立した",
+    "example": "They have an insular worldview.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "365",
+    "term": "intrepid",
+    "meaning": "勇敢な",
+    "example": "He is an intrepid explorer.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "366",
+    "term": "inveterate",
+    "meaning": "常習的な",
+    "example": "He is an inveterate liar.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "367",
+    "term": "jubilant",
+    "meaning": "歓喜に沸いた",
+    "example": "The crowd was jubilant.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "368",
+    "term": "knell",
+    "meaning": "弔鐘",
+    "example": "The news sounded the death knell for the project.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "369",
+    "term": "lithe",
+    "meaning": "しなやかな",
+    "example": "She has a lithe body.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "370",
+    "term": "lurid",
+    "meaning": "ぞっとするような",
+    "example": "The book contains lurid details.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "371",
+    "term": "maverick",
+    "meaning": "異端児",
+    "example": "He is a political maverick.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "372",
+    "term": "maxim",
+    "meaning": "格言",
+    "example": "It's a useful maxim to live by.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "374",
+    "term": "modicum",
+    "meaning": "少量",
+    "example": "He has a modicum of talent.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "375",
+    "term": "morose",
+    "meaning": "不機嫌な",
+    "example": "He was morose and silent.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "376",
+    "term": "myriad",
+    "meaning": "無数の",
+    "example": "There are myriad possibilities.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "377",
+    "term": "nadir",
+    "meaning": "どん底",
+    "example": "The company reached its nadir last year.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "378",
+    "term": "nominal",
+    "meaning": "名目上の",
+    "example": "He is the nominal head of the company.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "379",
+    "term": "novice",
+    "meaning": "初心者",
+    "example": "He is a novice at chess.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "380",
+    "term": "nuance",
+    "meaning": "微妙な違い",
+    "example": "He understood the nuances of the language.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "381",
+    "term": "oblivious",
+    "meaning": "気づいていない",
+    "example": "He was oblivious to the danger.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "382",
+    "term": "obsequious",
+    "meaning": "媚びへつらう",
+    "example": "He was obsequious to his boss.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "383",
+    "term": "obtuse",
+    "meaning": "鈍い",
+    "example": "He was being deliberately obtuse.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "384",
+    "term": "panacea",
+    "meaning": "万能薬",
+    "example": "Technology is not a panacea for all problems.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "385",
+    "term": "parody",
+    "meaning": "パロディ",
+    "example": "The movie is a parody of horror films.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "386",
+    "term": "penchant",
+    "meaning": "強い好み",
+    "example": "He has a penchant for fast cars.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "387",
+    "term": "perusal",
+    "meaning": "精読",
+    "example": "The documents are ready for your perusal.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "388",
+    "term": "plethora",
+    "meaning": "過多",
+    "example": "There is a plethora of information online.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "389",
+    "term": "predilection",
+    "meaning": "偏愛",
+    "example": "He has a predilection for spicy food.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "390",
+    "term": "quaint",
+    "meaning": "古風で趣のある",
+    "example": "It's a quaint little village.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "391",
+    "term": "rash",
+    "meaning": "軽率な",
+    "example": "Don't make any rash decisions.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "392",
+    "term": "refurbish",
+    "meaning": "改装する",
+    "example": "The hotel was recently refurbished.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "393",
+    "term": "repudiate",
+    "meaning": "拒絶する",
+    "example": "He repudiated the allegations.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "394",
+    "term": "rife",
+    "meaning": "蔓延している",
+    "example": "The city was rife with corruption.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "395",
+    "term": "salient",
+    "meaning": "目立つ",
+    "example": "What are the salient points of the report?",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "396",
+    "term": "serendipity",
+    "meaning": "棚からぼたもち",
+    "example": "It was a moment of pure serendipity.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "397",
+    "term": "staid",
+    "meaning": "落ち着いた",
+    "example": "He has a staid personality.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "398",
+    "term": "superfluous",
+    "meaning": "余分な",
+    "example": "His comments were superfluous.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "399",
+    "term": "sycophant",
+    "meaning": "おべっか使い",
+    "example": "He is a sycophant.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "400",
+    "term": "taciturn",
+    "meaning": "無口な",
+    "example": "He is a taciturn man.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "401",
+    "term": "abandon",
+    "meaning": "放棄する",
+    "example": "The project was abandoned due to lack of funds.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "402",
+    "term": "abstract",
+    "meaning": "要約",
+    "example": "Please read the abstract of the report.",
+    "level": 730,
+    "category": "Research"
+  },
+  {
+    "id": "403",
+    "term": "access",
+    "meaning": "アクセス",
+    "example": "You need a password to access the database.",
+    "level": 600,
+    "category": "Technology"
+  },
+  {
+    "id": "404",
+    "term": "accommodate",
+    "meaning": "収容する",
+    "example": "The hotel can accommodate up to 500 guests.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "405",
+    "term": "accompany",
+    "meaning": "同行する",
+    "example": "Children must be accompanied by an adult.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "406",
+    "term": "account",
+    "meaning": "口座、説明",
+    "example": "I need to open a bank account.",
+    "level": 600,
+    "category": "Finance"
+  },
+  {
+    "id": "407",
+    "term": "accurate",
+    "meaning": "正確な",
+    "example": "The data must be accurate.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "408",
+    "term": "acknowledge",
+    "meaning": "認める",
+    "example": "Please acknowledge receipt of this email.",
+    "level": 730,
+    "category": "Office"
+  },
+  {
+    "id": "409",
+    "term": "adequate",
+    "meaning": "十分な",
+    "example": "The lighting is not adequate for reading.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "410",
+    "term": "adjacent",
+    "meaning": "隣接した",
+    "example": "The office is adjacent to the library.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "411",
+    "term": "administration",
+    "meaning": "管理、行政",
+    "example": "The administration is planning new reforms.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "412",
+    "term": "advocate",
+    "meaning": "提唱する",
+    "example": "He advocates for environmental protection.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "413",
+    "term": "aggregate",
+    "meaning": "合計の",
+    "example": "The aggregate score was 150.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "414",
+    "term": "aid",
+    "meaning": "援助",
+    "example": "The government provided aid to the victims.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "415",
+    "term": "albeit",
+    "meaning": "〜ではあるが",
+    "example": "It was a successful trip, albeit a short one.",
+    "level": 990,
+    "category": "General"
+  },
+  {
+    "id": "416",
+    "term": "ambition",
+    "meaning": "野心",
+    "example": "Her ambition is to become a CEO.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "417",
+    "term": "amend",
+    "meaning": "修正する",
+    "example": "The contract was amended last month.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "418",
+    "term": "analogy",
+    "meaning": "類推",
+    "example": "He used an analogy to explain the concept.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "419",
+    "term": "annual",
+    "meaning": "年次の",
+    "example": "The annual report is due tomorrow.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "420",
+    "term": "appendix",
+    "meaning": "付録",
+    "example": "See the appendix for more details.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "421",
+    "term": "appreciable",
+    "meaning": "かなりの",
+    "example": "There has been an appreciable improvement.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "422",
+    "term": "arbitrate",
+    "meaning": "仲裁する",
+    "example": "A third party was called to arbitrate the dispute.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "423",
+    "term": "aspect",
+    "meaning": "側面",
+    "example": "We need to consider every aspect of the problem.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "424",
+    "term": "assembly",
+    "meaning": "集会、組み立て",
+    "example": "The assembly line is running smoothly.",
+    "level": 600,
+    "category": "Manufacturing"
+  },
+  {
+    "id": "425",
+    "term": "assess",
+    "meaning": "評価する",
+    "example": "We need to assess the damage.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "426",
+    "term": "assign",
+    "meaning": "割り当てる",
+    "example": "The teacher assigned homework.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "427",
+    "term": "assistance",
+    "meaning": "援助",
+    "example": "Do you need any assistance?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "428",
+    "term": "assurance",
+    "meaning": "保証",
+    "example": "He gave me his assurance that he would help.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "429",
+    "term": "attainment",
+    "meaning": "達成",
+    "example": "The attainment of goals requires hard work.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "430",
+    "term": "attitude",
+    "meaning": "態度",
+    "example": "He has a positive attitude.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "431",
+    "term": "author",
+    "meaning": "著者",
+    "example": "Who is the author of this book?",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "432",
+    "term": "authority",
+    "meaning": "権威",
+    "example": "He is an authority on the subject.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "433",
+    "term": "automate",
+    "meaning": "自動化する",
+    "example": "We are trying to automate the process.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "434",
+    "term": "barrier",
+    "meaning": "障壁",
+    "example": "Language can be a barrier to communication.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "435",
+    "term": "aware",
+    "meaning": "気づいている",
+    "example": "I was not aware of the change.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "436",
+    "term": "behalf",
+    "meaning": "〜に代わって",
+    "example": "I am writing on behalf of my client.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "437",
+    "term": "bias",
+    "meaning": "偏見",
+    "example": "The report showed a clear bias.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "438",
+    "term": "bond",
+    "meaning": "絆、債券",
+    "example": "There is a strong bond between them.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "439",
+    "term": "brief",
+    "meaning": "簡潔な",
+    "example": "Please keep your comments brief.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "440",
+    "term": "bulk",
+    "meaning": "大部分",
+    "example": "The bulk of the work is done.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "441",
+    "term": "capability",
+    "meaning": "能力",
+    "example": "The company has the capability to expand.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "442",
+    "term": "capacity",
+    "meaning": "容量、能力",
+    "example": "The stadium has a capacity of 50,000.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "443",
+    "term": "category",
+    "meaning": "カテゴリー",
+    "example": "The items are divided into categories.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "444",
+    "term": "cease",
+    "meaning": "やめる",
+    "example": "The company ceased operations last year.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "445",
+    "term": "challenge",
+    "meaning": "挑戦",
+    "example": "It was a difficult challenge.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "446",
+    "term": "channel",
+    "meaning": "チャンネル、経路",
+    "example": "We need to find a new marketing channel.",
+    "level": 600,
+    "category": "Marketing"
+  },
+  {
+    "id": "447",
+    "term": "chapter",
+    "meaning": "章",
+    "example": "Read the first chapter for tomorrow.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "448",
+    "term": "chart",
+    "meaning": "図表",
+    "example": "The chart shows the sales trends.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "449",
+    "term": "chemical",
+    "meaning": "化学物質",
+    "example": "The factory uses dangerous chemicals.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "450",
+    "term": "circumstance",
+    "meaning": "状況",
+    "example": "Under no circumstances should you leave.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "451",
+    "term": "cite",
+    "meaning": "引用する",
+    "example": "He cited several examples.",
+    "level": 860,
+    "category": "Research"
+  },
+  {
+    "id": "452",
+    "term": "civil",
+    "meaning": "市民の",
+    "example": "He is a civil servant.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "453",
+    "term": "clause",
+    "meaning": "条項",
+    "example": "Check the termination clause.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "454",
+    "term": "code",
+    "meaning": "コード、規約",
+    "example": "Please enter your access code.",
+    "level": 600,
+    "category": "Technology"
+  },
+  {
+    "id": "455",
+    "term": "collapse",
+    "meaning": "崩壊する",
+    "example": "The building collapsed during the earthquake.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "456",
+    "term": "colleague",
+    "meaning": "同僚",
+    "example": "I discussed it with my colleagues.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "457",
+    "term": "commission",
+    "meaning": "委員会、手数料",
+    "example": "He earns a 10% commission.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "458",
+    "term": "commit",
+    "meaning": "コミットする、犯す",
+    "example": "He is committed to the project.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "459",
+    "term": "boundary",
+    "meaning": "境界",
+    "example": "The river forms the boundary between the two countries.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "460",
+    "term": "communication",
+    "meaning": "コミュニケーション",
+    "example": "Good communication is essential.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "461",
+    "term": "community",
+    "meaning": "コミュニティ",
+    "example": "The local community is very supportive.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "462",
+    "term": "compatible",
+    "meaning": "互換性のある",
+    "example": "The software is compatible with Windows.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "463",
+    "term": "compensation",
+    "meaning": "報酬、補償",
+    "example": "The compensation package is very attractive.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "464",
+    "term": "compilation",
+    "meaning": "編集",
+    "example": "This is a compilation of his best works.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "465",
+    "term": "burden",
+    "meaning": "負担",
+    "example": "The tax burden is too high for small businesses.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "466",
+    "term": "complex",
+    "meaning": "複雑な",
+    "example": "The situation is very complex.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "467",
+    "term": "campaign",
+    "meaning": "キャンペーン",
+    "example": "The company launched a new advertising campaign.",
+    "level": 600,
+    "category": "Marketing"
+  },
+  {
+    "id": "468",
+    "term": "compound",
+    "meaning": "化合物、混合物",
+    "example": "Water is a chemical compound.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "469",
+    "term": "candidate",
+    "meaning": "候補者",
+    "example": "We are interviewing several candidates for the position.",
+    "level": 600,
+    "category": "Management"
+  },
+  {
+    "id": "470",
+    "term": "competence",
+    "meaning": "能力",
+    "example": "He demonstrated great competence in his work.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "471",
+    "term": "compute",
+    "meaning": "計算する",
+    "example": "The computer can compute large numbers quickly.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "472",
+    "term": "conceive",
+    "meaning": "思いつく",
+    "example": "He conceived the idea while on vacation.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "473",
+    "term": "concentration",
+    "meaning": "集中",
+    "example": "The task requires high concentration.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "474",
+    "term": "concept",
+    "meaning": "概念",
+    "example": "It is a difficult concept to understand.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "475",
+    "term": "concession",
+    "meaning": "譲歩",
+    "example": "The company made several concessions.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "476",
+    "term": "conclusion",
+    "meaning": "結論",
+    "example": "I came to the same conclusion.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "477",
+    "term": "concrete",
+    "meaning": "具体的な、コンクリート",
+    "example": "We need concrete evidence.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "478",
+    "term": "confer",
+    "meaning": "相談する、授与する",
+    "example": "I need to confer with my colleagues.",
+    "level": 860,
+    "category": "General"
+  },
+  {
+    "id": "479",
+    "term": "conference",
+    "meaning": "会議",
+    "example": "The conference was very informative.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "480",
+    "term": "confidential",
+    "meaning": "機密の",
+    "example": "This information is strictly confidential.",
+    "level": 730,
+    "category": "Office"
+  },
+  {
+    "id": "481",
+    "term": "configuration",
+    "meaning": "構成",
+    "example": "The system configuration is incorrect.",
+    "level": 860,
+    "category": "Technology"
+  },
+  {
+    "id": "482",
+    "term": "classification",
+    "meaning": "分類",
+    "example": "The classification of books is based on their subject.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "483",
+    "term": "conflict",
+    "meaning": "衝突、紛争",
+    "example": "There is a conflict of interest.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "484",
+    "term": "terminate",
+    "meaning": "終了させる",
+    "example": "The contract was terminated early.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "485",
+    "term": "consent",
+    "meaning": "同意",
+    "example": "You need parental consent.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "486",
+    "term": "consequence",
+    "meaning": "結果",
+    "example": "You must accept the consequences.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "487",
+    "term": "obstacle",
+    "meaning": "障害",
+    "example": "We need to overcome several obstacles.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "488",
+    "term": "vehicle",
+    "meaning": "手段",
+    "example": "The internet is a powerful vehicle for communication.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "489",
+    "term": "consistent",
+    "meaning": "一貫した",
+    "example": "The results are consistent with our theory.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "490",
+    "term": "constant",
+    "meaning": "絶え間ない",
+    "example": "The noise was constant.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "491",
+    "term": "section",
+    "meaning": "部門",
+    "example": "He works in the sales section.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "492",
+    "term": "constraint",
+    "meaning": "制約",
+    "example": "We are working under time constraints.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "493",
+    "term": "construct",
+    "meaning": "建設する",
+    "example": "They are constructing a new bridge.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "494",
+    "term": "diagram",
+    "meaning": "図",
+    "example": "The diagram shows how the machine works.",
+    "level": 600,
+    "category": "Technology"
+  },
+  {
+    "id": "495",
+    "term": "substance",
+    "meaning": "物質",
+    "example": "The substance is highly flammable.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "496",
+    "term": "situation",
+    "meaning": "状況",
+    "example": "We are monitoring the situation closely.",
+    "level": 600,
+    "category": "General"
+  },
+  {
+    "id": "497",
+    "term": "contemporary",
+    "meaning": "現代の",
+    "example": "I like contemporary art.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "498",
+    "term": "context",
+    "meaning": "文脈、背景",
+    "example": "You need to look at the context.",
+    "level": 730,
+    "category": "General"
+  },
+  {
+    "id": "499",
+    "term": "contract",
+    "meaning": "契約",
+    "example": "The contract expires next month.",
+    "level": 600,
+    "category": "Business"
+  },
+  {
+    "id": "500",
+    "term": "quote",
+    "meaning": "引用する",
+    "example": "Can you quote a price for the repairs?",
+    "level": 730,
+    "category": "Finance"
+  }
+]
