@@ -45,8 +45,17 @@ if (!GEMINI_API_KEY || GEMINI_API_KEY === 'MY_GEMINI_API_KEY') {
 }
 
 // ── 設定 ─────────────────────────────────────────────────────────────────
-/** 各レベルの目標単語数 (合計: 14,000) */
-const TARGETS = { 600: 3500, 730: 3500, 860: 3500, 990: 3500 };
+/**
+ * 各レベルの目標単語数
+ * 環境変数で上書き可能: TARGET_600=2000 TARGET_730=2000 node scripts/generate-words.mjs
+ * デフォルト合計: 8,500語 (コスト削減のため 3,500→2,000 に変更)
+ */
+const TARGETS = {
+  600:  parseInt(process.env.TARGET_600  ?? '3500', 10),
+  730:  parseInt(process.env.TARGET_730  ?? '2000', 10),
+  860:  parseInt(process.env.TARGET_860  ?? '2000', 10),
+  990:  parseInt(process.env.TARGET_990  ?? '1000', 10),
+};
 
 const BATCH_SIZE  = parseInt(process.env.BATCH_SIZE  ?? '30', 10);
 const DELAY_MS    = parseInt(process.env.DELAY_MS    ?? '1500', 10);
@@ -118,7 +127,11 @@ async function generateBatch(level, count, usedTerms) {
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: prompt,
-        config: { temperature: 0.85, maxOutputTokens: 16384 },
+        config: {
+          temperature: 0.85,
+          maxOutputTokens: 16384,
+          thinkingConfig: { thinkingBudget: 0 }, // 思考モード無効化 → コスト大幅削減
+        },
       });
 
       let text = (response.text ?? '').trim()

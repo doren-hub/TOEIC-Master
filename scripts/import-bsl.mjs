@@ -78,7 +78,7 @@ ${terms.join('\n')}
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: prompt,
-        config: { temperature: 0.3, maxOutputTokens: 8192 },
+        config: { temperature: 0.3, maxOutputTokens: 8192, thinkingConfig: { thinkingBudget: 0 } },
       });
       let text = (response.text ?? '').trim()
         .replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/i, '').trim();

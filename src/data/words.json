@@ -33022,5 +33022,717 @@
     "example": "All employees are bound by the company's strict confidentiality agreement.",
     "level": 860,
     "category": "Legal"
+  },
+  {
+    "id": "4134",
+    "term": "allocation",
+    "meaning": "配分／割り当て",
+    "example": "The budget allocation for the marketing department was increased by 20% this year.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4135",
+    "term": "bilateral",
+    "meaning": "二国間の",
+    "example": "The two governments signed a bilateral trade agreement to boost economic cooperation.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4136",
+    "term": "breakeven",
+    "meaning": "損益分岐点",
+    "example": "The startup is projected to reach its breakeven point within the next 18 months.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4137",
+    "term": "cashflow",
+    "meaning": "キャッシュフロー／資金の流れ",
+    "example": "Maintaining positive cash flow is essential for the company's day-to-day operations.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4138",
+    "term": "collateral",
+    "meaning": "担保",
+    "example": "The bank required collateral before approving the company's business expansion loan.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4139",
+    "term": "concise",
+    "meaning": "簡潔な",
+    "example": "Please provide a concise summary of the quarterly results for the executive meeting.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4140",
+    "term": "condense",
+    "meaning": "要約する／凝縮する",
+    "example": "Could you condense this 30-page report into a two-page executive summary?",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4141",
+    "term": "consortium",
+    "meaning": "コンソーシアム／企業連合",
+    "example": "A consortium of technology companies collaborated to develop the new industry standard.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4142",
+    "term": "credential",
+    "meaning": "資格証明書／認証情報",
+    "example": "All applicants must submit their academic credentials along with their application.",
+    "level": 730,
+    "category": "HR"
+  },
+  {
+    "id": "4143",
+    "term": "demographics",
+    "meaning": "人口統計／デモグラフィクス",
+    "example": "The marketing team analyzed customer demographics to better target their advertising campaigns.",
+    "level": 730,
+    "category": "Marketing"
+  },
+  {
+    "id": "4144",
+    "term": "diversify",
+    "meaning": "多様化する",
+    "example": "The company plans to diversify its revenue streams to reduce dependence on a single market.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4145",
+    "term": "downside",
+    "meaning": "不利な面／マイナス面",
+    "example": "The downside of rapid expansion is the increased strain on existing company resources.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4146",
+    "term": "empower",
+    "meaning": "権限を与える／意欲を高める",
+    "example": "The new system will empower frontline employees to resolve customer issues independently.",
+    "level": 730,
+    "category": "HR"
+  },
+  {
+    "id": "4147",
+    "term": "escalate",
+    "meaning": "エスカレートする／段階的に引き渡す",
+    "example": "If the complaint cannot be resolved at the counter, please escalate it to the manager.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4148",
+    "term": "execution",
+    "meaning": "実行／遂行",
+    "example": "Flawless execution of the marketing strategy resulted in a 25% increase in quarterly sales.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4149",
+    "term": "feasibility",
+    "meaning": "実現可能性",
+    "example": "A thorough feasibility study was conducted before committing to the construction project.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4150",
+    "term": "fulfillment",
+    "meaning": "履行／注文処理",
+    "example": "The company improved its order fulfillment process to reduce shipping times by 30%.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4151",
+    "term": "governance",
+    "meaning": "ガバナンス／統治",
+    "example": "Strong corporate governance is essential for maintaining the trust of investors and stakeholders.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4152",
+    "term": "headcount",
+    "meaning": "従業員数／人員",
+    "example": "The department reduced its headcount by 15% to cut costs during the economic downturn.",
+    "level": 730,
+    "category": "HR"
+  },
+  {
+    "id": "4153",
+    "term": "hierarchy",
+    "meaning": "階層制度／組織構造",
+    "example": "The company adopted a flat hierarchy to encourage more direct communication across teams.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4154",
+    "term": "implementation",
+    "meaning": "実施／導入",
+    "example": "The implementation of the new HR software was completed two weeks ahead of schedule.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4155",
+    "term": "incentivize",
+    "meaning": "動機付ける／インセンティブを与える",
+    "example": "The commission structure was redesigned to incentivize employees to exceed their sales targets.",
+    "level": 730,
+    "category": "HR"
+  },
+  {
+    "id": "4156",
+    "term": "intranet",
+    "meaning": "イントラネット",
+    "example": "Company policies and internal announcements are published on the corporate intranet.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "4157",
+    "term": "leverage",
+    "meaning": "活用する／てこ入れ",
+    "example": "The company will leverage its global distribution network to enter new international markets.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4158",
+    "term": "liability",
+    "meaning": "負債／法的責任",
+    "example": "The company's financial statements must clearly disclose all outstanding liabilities.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4159",
+    "term": "mandate",
+    "meaning": "指令／義務付ける",
+    "example": "New safety regulations mandate that all employees complete annual health and safety training.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "4160",
+    "term": "marketplace",
+    "meaning": "市場／マーケットプレイス",
+    "example": "The online marketplace has revolutionized how consumers discover and purchase goods.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4161",
+    "term": "mitigation",
+    "meaning": "軽減／緩和",
+    "example": "Effective risk mitigation strategies are essential for managing uncertainty in global markets.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4162",
+    "term": "modernize",
+    "meaning": "現代化する／刷新する",
+    "example": "The company invested heavily to modernize its aging production facilities.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4163",
+    "term": "monitoring",
+    "meaning": "監視／モニタリング",
+    "example": "Continuous monitoring of key performance indicators helps management track business progress.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4164",
+    "term": "monopoly",
+    "meaning": "独占",
+    "example": "Antitrust laws are designed to prevent any single company from holding a market monopoly.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4165",
+    "term": "networking",
+    "meaning": "ネットワーキング／人脈形成",
+    "example": "Industry conferences provide excellent opportunities for networking with potential business partners.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4166",
+    "term": "niche",
+    "meaning": "ニッチ／特定の市場分野",
+    "example": "The startup carved out a profitable niche by offering premium organic office supplies.",
+    "level": 730,
+    "category": "Marketing"
+  },
+  {
+    "id": "4167",
+    "term": "outsource",
+    "meaning": "外注する／アウトソーシングする",
+    "example": "The company decided to outsource its customer support operations to a specialized firm.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4168",
+    "term": "proactive",
+    "meaning": "積極的な／先を見越した",
+    "example": "A proactive approach to addressing customer concerns prevents issues from escalating.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4169",
+    "term": "profile",
+    "meaning": "プロフィール／概要",
+    "example": "The sales team prepared a detailed client profile before the first business meeting.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4170",
+    "term": "provision",
+    "meaning": "規定／条項／供給",
+    "example": "The contract includes a provision for automatic renewal unless either party provides notice.",
+    "level": 730,
+    "category": "Legal"
+  },
+  {
+    "id": "4171",
+    "term": "renegotiate",
+    "meaning": "再交渉する",
+    "example": "Both parties agreed to renegotiate the contract terms in light of changing market conditions.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4172",
+    "term": "roadmap",
+    "meaning": "ロードマップ／計画",
+    "example": "The product roadmap for the next fiscal year was presented to the board of directors.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4173",
+    "term": "safeguard",
+    "meaning": "保護手段／守る",
+    "example": "Several data safeguards were put in place to protect confidential customer information.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4174",
+    "term": "scalability",
+    "meaning": "拡張性／スケーラビリティ",
+    "example": "The platform's scalability allows the company to accommodate rapid growth without disruption.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "4175",
+    "term": "scorecard",
+    "meaning": "スコアカード／業績評価表",
+    "example": "The balanced scorecard measures performance across financial, customer, and operational dimensions.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4176",
+    "term": "shortfall",
+    "meaning": "不足／欠如",
+    "example": "The revenue shortfall in Q3 prompted management to revise the annual financial forecast.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4177",
+    "term": "staffing",
+    "meaning": "人員配置／採用",
+    "example": "The recruitment agency provides tailored staffing solutions for the hospitality industry.",
+    "level": 730,
+    "category": "HR"
+  },
+  {
+    "id": "4178",
+    "term": "subsidy",
+    "meaning": "補助金",
+    "example": "The government provides a generous subsidy to companies that invest in renewable energy.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4179",
+    "term": "succession",
+    "meaning": "継承／後継",
+    "example": "A comprehensive succession plan ensures leadership continuity during executive transitions.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4180",
+    "term": "synergy",
+    "meaning": "相乗効果／シナジー",
+    "example": "The merger was expected to create operational synergies that would reduce costs by 15%.",
+    "level": 730,
+    "category": "Business"
+  },
+  {
+    "id": "4181",
+    "term": "talent",
+    "meaning": "人材／才能",
+    "example": "Attracting and retaining top talent remains the company's most critical strategic priority.",
+    "level": 730,
+    "category": "HR"
+  },
+  {
+    "id": "4182",
+    "term": "taxonomy",
+    "meaning": "分類体系／タクソノミー",
+    "example": "The IT team developed a content taxonomy to systematically organize the company's digital assets.",
+    "level": 730,
+    "category": "Technology"
+  },
+  {
+    "id": "4183",
+    "term": "threshold",
+    "meaning": "閾値／基準値",
+    "example": "All expenditures above the defined threshold require written approval from a senior director.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4184",
+    "term": "treasury",
+    "meaning": "財務部門／資金管理",
+    "example": "The treasury department is responsible for managing the company's cash reserves and investments.",
+    "level": 730,
+    "category": "Finance"
+  },
+  {
+    "id": "4185",
+    "term": "utilization",
+    "meaning": "利用率／稼働率",
+    "example": "Improving equipment utilization across all production lines helped reduce manufacturing costs.",
+    "level": 730,
+    "category": "Management"
+  },
+  {
+    "id": "4186",
+    "term": "acumen",
+    "meaning": "洞察力／明敏さ",
+    "example": "Her business acumen helped the startup navigate a competitive market and secure key investments.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "4187",
+    "term": "assessment",
+    "meaning": "評価／査定／アセスメント",
+    "example": "A comprehensive financial assessment was conducted before the board approved the acquisition.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "4188",
+    "term": "catalyst",
+    "meaning": "触媒／起爆剤",
+    "example": "The new CEO's bold strategy acted as a catalyst for the company's transformation.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "4189",
+    "term": "centralization",
+    "meaning": "集権化／一元化",
+    "example": "The centralization of procurement processes helped reduce costs and strengthen supplier relationships.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "4190",
+    "term": "divestiture",
+    "meaning": "事業売却／資産処分",
+    "example": "The board approved the divestiture of the underperforming retail division to focus on core operations.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "4191",
+    "term": "equilibrium",
+    "meaning": "均衡／平衡状態",
+    "example": "The currency market gradually returned to equilibrium after months of volatility.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "4192",
+    "term": "exacerbate",
+    "meaning": "悪化させる／深刻化させる",
+    "example": "The unexpected production delays exacerbated the existing supply shortage in the market.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "4193",
+    "term": "forecasting",
+    "meaning": "予測／需要予測",
+    "example": "Accurate demand forecasting enables the company to manage inventory levels more efficiently.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "4194",
+    "term": "harmonize",
+    "meaning": "調和させる／統一する",
+    "example": "The merger required both companies to harmonize their financial reporting standards.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "4195",
+    "term": "impasse",
+    "meaning": "行き詰まり／膠着状態",
+    "example": "Contract negotiations reached an impasse when neither party would agree on the payment terms.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "4196",
+    "term": "jurisdiction",
+    "meaning": "管轄権／裁判権",
+    "example": "All disputes arising from this contract fall under the exclusive jurisdiction of the Tokyo courts.",
+    "level": 860,
+    "category": "Legal"
+  },
+  {
+    "id": "4197",
+    "term": "monetize",
+    "meaning": "収益化する／マネタイズする",
+    "example": "The company is exploring new ways to monetize its vast repository of consumer data.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "4198",
+    "term": "paradigm",
+    "meaning": "パラダイム／典型",
+    "example": "Remote work has created a fundamental paradigm shift in how organizations manage their workforce.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "4199",
+    "term": "rationale",
+    "meaning": "論拠／根拠",
+    "example": "The CFO presented a clear rationale for the proposed budget increase to the board.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "4200",
+    "term": "reconcile",
+    "meaning": "調整する／一致させる",
+    "example": "The accounting team worked overtime to reconcile the discrepancies in the quarterly reports.",
+    "level": 860,
+    "category": "Finance"
+  },
+  {
+    "id": "4201",
+    "term": "restructure",
+    "meaning": "再構築する／組織改編する",
+    "example": "The company announced plans to restructure its global operations to improve profitability.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "4202",
+    "term": "scenario",
+    "meaning": "シナリオ／想定事例",
+    "example": "The risk team developed three scenarios to help prepare for various economic conditions.",
+    "level": 860,
+    "category": "Management"
+  },
+  {
+    "id": "4203",
+    "term": "systemic",
+    "meaning": "組織全体にわたる／体系的な",
+    "example": "The external audit revealed systemic weaknesses in the company's internal financial controls.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "4204",
+    "term": "ameliorate",
+    "meaning": "改善する／緩和する",
+    "example": "The revised benefits package was designed to ameliorate working conditions for frontline staff.",
+    "level": 860,
+    "category": "HR"
+  },
+  {
+    "id": "4205",
+    "term": "diligence",
+    "meaning": "勤勉さ／デューデリジェンス",
+    "example": "The due diligence process uncovered several critical risks before the acquisition was finalized.",
+    "level": 860,
+    "category": "Business"
+  },
+  {
+    "id": "4206",
+    "term": "arbitrage",
+    "meaning": "裁定取引／アービトラージ",
+    "example": "The hedge fund generated consistent returns by exploiting currency arbitrage opportunities.",
+    "level": 990,
+    "category": "Finance"
+  },
+  {
+    "id": "4207",
+    "term": "bureaucracy",
+    "meaning": "官僚制度／煩雑な手続き",
+    "example": "Reforming the bureaucracy was seen as essential to attracting foreign investment.",
+    "level": 990,
+    "category": "Business"
+  },
+  {
+    "id": "4208",
+    "term": "codification",
+    "meaning": "成文化／体系化",
+    "example": "The codification of internal procedures significantly reduced inconsistencies across departments.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "4209",
+    "term": "commensurate",
+    "meaning": "釣り合った／相応の",
+    "example": "The job offer includes a salary package commensurate with the candidate's level of expertise.",
+    "level": 990,
+    "category": "HR"
+  },
+  {
+    "id": "4210",
+    "term": "convoluted",
+    "meaning": "複雑な／入り組んだ",
+    "example": "The convoluted approval process was identified as a major barrier to operational efficiency.",
+    "level": 990,
+    "category": "Management"
+  },
+  {
+    "id": "4211",
+    "term": "disparity",
+    "meaning": "格差／不均衡",
+    "example": "The annual report highlighted the growing disparity in compensation between executives and staff.",
+    "level": 990,
+    "category": "HR"
+  },
+  {
+    "id": "4212",
+    "term": "exigency",
+    "meaning": "緊急事態／差し迫った必要性",
+    "example": "The company's financial exigency led the board to authorize immediate emergency cost-cutting measures.",
+    "level": 990,
+    "category": "Finance"
+  },
+  {
+    "id": "4213",
+    "term": "fiduciary",
+    "meaning": "受託の／信任の",
+    "example": "Board members have a fiduciary duty to prioritize the long-term interests of shareholders.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "4214",
+    "term": "indemnify",
+    "meaning": "補償する／免責にする",
+    "example": "The supplier agreed to indemnify the retailer against all liability arising from product defects.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "4215",
+    "term": "insolvent",
+    "meaning": "支払い不能の／破産した",
+    "example": "The firm was declared insolvent after failing to service its debt obligations for several months.",
+    "level": 990,
+    "category": "Finance"
+  },
+  {
+    "id": "4216",
+    "term": "jurisprudence",
+    "meaning": "法学／法理学",
+    "example": "A deep knowledge of commercial jurisprudence is indispensable for this senior corporate counsel role.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "4217",
+    "term": "liquidate",
+    "meaning": "清算する／現金化する",
+    "example": "The board voted to liquidate the company's non-core assets to repay outstanding creditors.",
+    "level": 990,
+    "category": "Finance"
+  },
+  {
+    "id": "4218",
+    "term": "malfeasance",
+    "meaning": "不正行為／職権乱用",
+    "example": "The executive was dismissed following an investigation into allegations of financial malfeasance.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "4219",
+    "term": "obsolescence",
+    "meaning": "陳腐化／旧式化",
+    "example": "Planned obsolescence has drawn criticism from consumers and environmental advocates alike.",
+    "level": 990,
+    "category": "Business"
+  },
+  {
+    "id": "4220",
+    "term": "pecuniary",
+    "meaning": "金銭的な／財政上の",
+    "example": "The settlement included substantial pecuniary compensation for all parties affected by the fraud.",
+    "level": 990,
+    "category": "Legal"
+  },
+  {
+    "id": "4221",
+    "term": "prerogative",
+    "meaning": "特権／専権事項",
+    "example": "Setting the annual executive remuneration packages is the prerogative of the compensation committee.",
+    "level": 990,
+    "category": "Management"
+  },
+  {
+    "id": "4222",
+    "term": "sequester",
+    "meaning": "隔離する／差し押さえる",
+    "example": "The disputed assets were sequestered by court order pending the final judgment.",
+    "level": 990,
+    "category": "Legal"
   }
 ]
