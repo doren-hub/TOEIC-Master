@@ -78,7 +78,7 @@ ${terms.join('\n')}
   for (let attempt = 1; attempt <= 4; attempt++) {
     try {
       const response = await ai.models.generateContent({
-        model: 'gemini-2.0-flash',
+        model: 'gemini-1.5-flash',
         contents: prompt,
         config: { temperature: 0.3, maxOutputTokens: 8192 },
       });
