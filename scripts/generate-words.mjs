@@ -48,7 +48,7 @@ if (!GEMINI_API_KEY || GEMINI_API_KEY === 'MY_GEMINI_API_KEY') {
 /** 各レベルの目標単語数 (合計: 14,000) */
 const TARGETS = { 600: 3500, 730: 3500, 860: 3500, 990: 3500 };
 
-const BATCH_SIZE  = parseInt(process.env.BATCH_SIZE  ?? '50', 10);
+const BATCH_SIZE  = parseInt(process.env.BATCH_SIZE  ?? '30', 10);
 const DELAY_MS    = parseInt(process.env.DELAY_MS    ?? '1500', 10);
 
 const CATEGORIES = [
@@ -118,7 +118,7 @@ async function generateBatch(level, count, usedTerms) {
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
         contents: prompt,
-        config: { temperature: 0.85, maxOutputTokens: 8192 },
+        config: { temperature: 0.85, maxOutputTokens: 16384 },
       });
 
       let text = (response.text ?? '').trim()
