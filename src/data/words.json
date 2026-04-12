@@ -1844,7 +1844,7 @@
     "term": "guarantee",
     "meaning": "保証する",
     "example": "We guarantee the quality.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -1900,7 +1900,7 @@
     "term": "index",
     "meaning": "索引、指標",
     "example": "The price index is rising.",
-    "level": 860,
+    "level": 730,
     "category": "Finance"
   },
   {
@@ -1940,7 +1940,7 @@
     "term": "initial",
     "meaning": "最初の",
     "example": "The initial reaction was positive.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -1972,7 +1972,7 @@
     "term": "instance",
     "meaning": "例",
     "example": "This is a clear instance of fraud.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2020,7 +2020,7 @@
     "term": "internal",
     "meaning": "内部の",
     "example": "We have an internal investigation.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2108,7 +2108,7 @@
     "term": "issue",
     "meaning": "問題、発行",
     "example": "This is a major issue.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2116,7 +2116,7 @@
     "term": "item",
     "meaning": "項目",
     "example": "There are five items on the list.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -2124,7 +2124,7 @@
     "term": "job",
     "meaning": "仕事",
     "example": "He is looking for a job.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -2132,7 +2132,7 @@
     "term": "journal",
     "meaning": "雑誌、日記",
     "example": "He published an article in a medical journal.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2148,7 +2148,7 @@
     "term": "label",
     "meaning": "ラベル",
     "example": "Check the label for instructions.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -2156,7 +2156,7 @@
     "term": "labor",
     "meaning": "労働",
     "example": "The cost of labor is rising.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2164,7 +2164,7 @@
     "term": "layer",
     "meaning": "層",
     "example": "There is a layer of dust on the table.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2172,7 +2172,7 @@
     "term": "lecture",
     "meaning": "講義",
     "example": "He gave a lecture on history.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2180,7 +2180,7 @@
     "term": "legal",
     "meaning": "法律の",
     "example": "You should seek legal advice.",
-    "level": 860,
+    "level": 730,
     "category": "Legal"
   },
   {
@@ -2212,7 +2212,7 @@
     "term": "license",
     "meaning": "免許",
     "example": "Do you have a driver's license?",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2220,7 +2220,7 @@
     "term": "likewise",
     "meaning": "同様に",
     "example": "He did likewise.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2228,7 +2228,7 @@
     "term": "link",
     "meaning": "関連付ける",
     "example": "The two events are linked.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2236,7 +2236,7 @@
     "term": "location",
     "meaning": "場所",
     "example": "The location is perfect.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2244,7 +2244,7 @@
     "term": "logic",
     "meaning": "論理",
     "example": "There is no logic in his argument.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2252,7 +2252,7 @@
     "term": "maintain",
     "meaning": "維持する",
     "example": "You need to maintain the equipment.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2260,7 +2260,7 @@
     "term": "major",
     "meaning": "主要な",
     "example": "This is a major problem.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -2276,7 +2276,7 @@
     "term": "manual",
     "meaning": "手動の、説明書",
     "example": "Read the manual carefully.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2284,7 +2284,7 @@
     "term": "margin",
     "meaning": "余白、利益",
     "example": "The profit margin is low.",
-    "level": 860,
+    "level": 730,
     "category": "Finance"
   },
   {
@@ -2292,7 +2292,7 @@
     "term": "mature",
     "meaning": "成熟した",
     "example": "He is very mature for his age.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2316,7 +2316,7 @@
     "term": "media",
     "meaning": "メディア",
     "example": "The media reported the news.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -2332,7 +2332,7 @@
     "term": "medical",
     "meaning": "医療の",
     "example": "He needs medical attention.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2340,7 +2340,7 @@
     "term": "medium",
     "meaning": "媒体、中間の",
     "example": "English is the medium of instruction.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2348,7 +2348,7 @@
     "term": "mental",
     "meaning": "精神の",
     "example": "Mental health is important.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2356,7 +2356,7 @@
     "term": "method",
     "meaning": "方法",
     "example": "We need a new method.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2364,7 +2364,7 @@
     "term": "migrate",
     "meaning": "移住する",
     "example": "Birds migrate south in winter.",
-    "level": 860,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2372,7 +2372,7 @@
     "term": "military",
     "meaning": "軍事の",
     "example": "He joined the military.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -2476,7 +2476,7 @@
     "term": "amiable",
     "meaning": "愛想の良い",
     "example": "He is an amiable young man.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2508,7 +2508,7 @@
     "term": "brazen",
     "meaning": "厚かましい",
     "example": "It was a brazen lie.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2516,7 +2516,7 @@
     "term": "brusque",
     "meaning": "ぶっきらぼうな",
     "example": "He was brusque with the staff.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2540,7 +2540,7 @@
     "term": "candor",
     "meaning": "素直さ、誠実さ",
     "example": "I appreciate your candor.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2548,7 +2548,7 @@
     "term": "chide",
     "meaning": "叱る",
     "example": "She chided him for being late.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2644,7 +2644,7 @@
     "term": "deride",
     "meaning": "嘲笑する",
     "example": "They derided his efforts.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2652,7 +2652,7 @@
     "term": "despot",
     "meaning": "専制君主",
     "example": "He was a cruel despot.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2668,7 +2668,7 @@
     "term": "elated",
     "meaning": "大喜びの",
     "example": "He was elated by the news.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2692,7 +2692,7 @@
     "term": "empathy",
     "meaning": "共感",
     "example": "He has a lot of empathy for others.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2700,7 +2700,7 @@
     "term": "enmity",
     "meaning": "敵意",
     "example": "There is a long-standing enmity between them.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2716,7 +2716,7 @@
     "term": "extol",
     "meaning": "絶賛する",
     "example": "They extolled the virtues of the new system.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2732,7 +2732,7 @@
     "term": "feral",
     "meaning": "野生の",
     "example": "They encountered feral cats.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2740,7 +2740,7 @@
     "term": "flabbergasted",
     "meaning": "仰天した",
     "example": "I was flabbergasted by the news.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2748,7 +2748,7 @@
     "term": "forsake",
     "meaning": "見捨てる",
     "example": "He forsook his family.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2756,7 +2756,7 @@
     "term": "fractious",
     "meaning": "怒りっぽい",
     "example": "The children were fractious.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2764,7 +2764,7 @@
     "term": "furtive",
     "meaning": "こそこそした",
     "example": "He cast a furtive glance.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2772,7 +2772,7 @@
     "term": "gluttony",
     "meaning": "暴飲暴食",
     "example": "Gluttony is a sin.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2788,7 +2788,7 @@
     "term": "haughty",
     "meaning": "傲慢な",
     "example": "She has a haughty attitude.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2900,7 +2900,7 @@
     "term": "jubilant",
     "meaning": "歓喜に沸いた",
     "example": "The crowd was jubilant.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2908,7 +2908,7 @@
     "term": "knell",
     "meaning": "弔鐘",
     "example": "The news sounded the death knell for the project.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2916,7 +2916,7 @@
     "term": "lithe",
     "meaning": "しなやかな",
     "example": "She has a lithe body.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2924,7 +2924,7 @@
     "term": "lurid",
     "meaning": "ぞっとするような",
     "example": "The book contains lurid details.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2956,7 +2956,7 @@
     "term": "morose",
     "meaning": "不機嫌な",
     "example": "He was morose and silent.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -2980,7 +2980,7 @@
     "term": "nominal",
     "meaning": "名目上の",
     "example": "He is the nominal head of the company.",
-    "level": 990,
+    "level": 730,
     "category": "General"
   },
   {
@@ -2988,7 +2988,7 @@
     "term": "novice",
     "meaning": "初心者",
     "example": "He is a novice at chess.",
-    "level": 990,
+    "level": 600,
     "category": "General"
   },
   {
@@ -3012,7 +3012,7 @@
     "term": "obsequious",
     "meaning": "媚びへつらう",
     "example": "He was obsequious to his boss.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -3036,7 +3036,7 @@
     "term": "parody",
     "meaning": "パロディ",
     "example": "The movie is a parody of horror films.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -3076,7 +3076,7 @@
     "term": "quaint",
     "meaning": "古風で趣のある",
     "example": "It's a quaint little village.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -3092,7 +3092,7 @@
     "term": "refurbish",
     "meaning": "改装する",
     "example": "The hotel was recently refurbished.",
-    "level": 990,
+    "level": 730,
     "category": "General"
   },
   {
@@ -3124,7 +3124,7 @@
     "term": "serendipity",
     "meaning": "棚からぼたもち",
     "example": "It was a moment of pure serendipity.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -3132,7 +3132,7 @@
     "term": "staid",
     "meaning": "落ち着いた",
     "example": "He has a staid personality.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -3156,7 +3156,7 @@
     "term": "taciturn",
     "meaning": "無口な",
     "example": "He is a taciturn man.",
-    "level": 990,
+    "level": 860,
     "category": "General"
   },
   {
@@ -3276,7 +3276,7 @@
     "term": "albeit",
     "meaning": "〜ではあるが",
     "example": "It was a successful trip, albeit a short one.",
-    "level": 990,
+    "level": 730,
     "category": "General"
   },
   {
@@ -3564,7 +3564,7 @@
     "term": "cite",
     "meaning": "引用する",
     "example": "He cited several examples.",
-    "level": 860,
+    "level": 730,
     "category": "Research"
   },
   {
@@ -3580,7 +3580,7 @@
     "term": "clause",
     "meaning": "条項",
     "example": "Check the termination clause.",
-    "level": 860,
+    "level": 730,
     "category": "Legal"
   },
   {
@@ -26236,7 +26236,7 @@
     "term": "pottery",
     "meaning": "陶器、陶芸",
     "example": "The local market sells handmade pottery from various artisans.",
-    "level": 730,
+    "level": 600,
     "category": "General"
   },
   {
@@ -26364,7 +26364,7 @@
     "term": "runner",
     "meaning": "走者、使い走り",
     "example": "We need a runner to deliver these urgent documents to the legal department.",
-    "level": 730,
+    "level": 600,
     "category": "Office"
   },
   {
@@ -26404,7 +26404,7 @@
     "term": "sleepy",
     "meaning": "活気のない、眠い",
     "example": "The sleepy market for luxury goods has been revitalized by our innovative marketing campaign.",
-    "level": 730,
+    "level": 600,
     "category": "Marketing"
   },
   {
@@ -27044,7 +27044,7 @@
     "term": "drum",
     "meaning": "繰り返し主張する、呼び起こす",
     "example": "The marketing team worked to drum up interest for the new product launch.",
-    "level": 860,
+    "level": 600,
     "category": "Marketing"
   },
   {
@@ -27108,7 +27108,7 @@
     "term": "elephant",
     "meaning": "ゾウ; (比喩的に)見て見ぬふりをしている問題",
     "example": "The manager decided to address the elephant in the room by openly discussing the recent layoffs.",
-    "level": 990,
+    "level": 600,
     "category": "Management"
   },
   {
@@ -28604,7 +28604,7 @@
     "term": "nominate",
     "meaning": "指名する、推薦する",
     "example": "The board decided to **nominate** Ms. Chen for the position of Chief Operating Officer.",
-    "level": 860,
+    "level": 730,
     "category": "HR"
   },
   {
@@ -28676,7 +28676,7 @@
     "term": "pepper",
     "meaning": "立て続けに質問する",
     "example": "The CEO was peppered with questions from reporters during the press conference.",
-    "level": 860,
+    "level": 600,
     "category": "Business"
   },
   {
@@ -29204,7 +29204,7 @@
     "term": "balloon",
     "meaning": "風船、膨らむ",
     "example": "The company's debt began to balloon after several unsuccessful investments.",
-    "level": 860,
+    "level": 600,
     "category": "Finance"
   },
   {
@@ -29260,7 +29260,7 @@
     "term": "biology",
     "meaning": "生物学",
     "example": "Our research team is exploring new applications of biology in sustainable agriculture.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -29332,7 +29332,7 @@
     "term": "chemistry",
     "meaning": "化学",
     "example": "Our new product utilizes advanced chemistry to improve material durability.",
-    "level": 860,
+    "level": 600,
     "category": "General"
   },
   {
@@ -30540,7 +30540,7 @@
     "term": "allergy",
     "meaning": "アレルギー",
     "example": "Please inform the catering staff if you have any food allergies.",
-    "level": 730,
+    "level": 600,
     "category": "General"
   },
   {
@@ -32508,7 +32508,7 @@
     "term": "footwear",
     "meaning": "履物、靴",
     "example": "Employees are required to wear appropriate footwear for safety in the factory.",
-    "level": 730,
+    "level": 600,
     "category": "General"
   },
   {
@@ -32580,7 +32580,7 @@
     "term": "homework",
     "meaning": "宿題（比喩的に準備、下調べ）",
     "example": "Before the negotiation, it's crucial to do your homework and research the client thoroughly.",
-    "level": 730,
+    "level": 600,
     "category": "General"
   },
   {
@@ -32668,7 +32668,7 @@
     "term": "newsletter",
     "meaning": "会報、ニュースレター",
     "example": "We send out a monthly newsletter to keep our clients updated on new products.",
-    "level": 730,
+    "level": 600,
     "category": "Marketing"
   },
   {
