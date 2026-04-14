@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CheckCircle2, XCircle, ArrowRight, Volume2, HelpCircle, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -36,6 +36,14 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
   const [isAnswered, setIsAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
+
+  // キーボードナビゲーション用 refs
+  const inputRef    = useRef<HTMLInputElement>(null);
+  const nextBtnRef  = useRef<HTMLButtonElement>(null);
+  const optionRefs  = useRef<(HTMLButtonElement | null)[]>([]);
+  // 最新の関数を保持（クロージャ問題を回避）
+  const handleAnswerRef  = useRef<(ans: string) => void>(() => {});
+  const nextQuestionRef  = useRef<() => void>(() => {});
 
   const isReviewMode = useMemo(() => {
     // If any word in the current set has been failed before, consider it a review session
@@ -165,6 +173,75 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
     }
   };
 
+  // 最新の関数を ref に保持
+  handleAnswerRef.current = handleAnswer;
+  nextQuestionRef.current = nextQuestion;
+
+  // 問題切り替え時: 適切な要素を自動フォーカス
+  useEffect(() => {
+    if (!currentQuestion) return;
+    optionRefs.current = [];
+    const timer = setTimeout(() => {
+      if (currentQuestion.type === 'spelling') {
+        inputRef.current?.focus();
+      } else {
+        optionRefs.current[0]?.focus();
+      }
+    }, 350); // アニメーション完了後
+    return () => clearTimeout(timer);
+  }, [currentIndex, currentQuestion?.type]);
+
+  // 回答後: Next ボタンにフォーカス
+  useEffect(() => {
+    if (isAnswered) {
+      setTimeout(() => nextBtnRef.current?.focus(), 150);
+    }
+  }, [isAnswered]);
+
+  // グローバルキーボードショートカット
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      const q = currentQuestion;
+      if (!q) return;
+
+      // 回答済み: Enter で次の問題へ
+      if (isAnswered) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          nextQuestionRef.current();
+        }
+        return;
+      }
+
+      // 選択問題: 1〜4 キーで即選択
+      if (q.type !== 'spelling' && q.options) {
+        const num = parseInt(e.key);
+        if (num >= 1 && num <= q.options.length) {
+          e.preventDefault();
+          const opt = q.options[num - 1];
+          setUserAnswer(opt);
+          handleAnswerRef.current(opt);
+          return;
+        }
+        // ↑↓ キーで選択肢間を移動
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+          e.preventDefault();
+          const cur = optionRefs.current.findIndex(r => r === document.activeElement);
+          optionRefs.current[(cur + 1) % optionRefs.current.filter(Boolean).length]?.focus();
+        }
+        if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+          e.preventDefault();
+          const refs = optionRefs.current.filter(Boolean);
+          const cur  = refs.findIndex(r => r === document.activeElement);
+          refs[(cur - 1 + refs.length) % refs.length]?.focus();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isAnswered, currentQuestion]);
+
   if (questions.length === 0) return <div className="flex items-center justify-center h-64">Loading questions...</div>;
 
   return (
@@ -223,14 +300,13 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
                   {currentQuestion.options?.map((opt, i) => (
                     <Button
                       key={i}
+                      ref={(el) => { optionRefs.current[i] = el; }}
                       variant={isAnswered ? (opt === currentQuestion.word.meaning ? 'default' : (userAnswer === opt ? 'destructive' : 'outline')) : 'outline'}
                       className={`h-14 text-lg justify-start px-6 rounded-xl transition-all ${!isAnswered && 'hover:bg-primary/5 hover:border-primary'}`}
-                      onClick={() => {
-                        setUserAnswer(opt);
-                        handleAnswer(opt);
-                      }}
+                      onClick={() => { setUserAnswer(opt); handleAnswer(opt); }}
                       disabled={isAnswered}
                     >
+                      <span className="mr-3 text-sm font-bold opacity-40 tabular-nums">{i + 1}</span>
                       {opt}
                     </Button>
                   ))}
@@ -246,14 +322,13 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
                     {currentQuestion.options?.map((opt, i) => (
                       <Button
                         key={i}
+                        ref={(el) => { optionRefs.current[i] = el; }}
                         variant={isAnswered ? (opt === currentQuestion.word.term ? 'default' : (userAnswer === opt ? 'destructive' : 'outline')) : 'outline'}
                         className={`h-14 text-lg justify-start px-6 rounded-xl transition-all ${!isAnswered && 'hover:bg-primary/5 hover:border-primary'}`}
-                        onClick={() => {
-                          setUserAnswer(opt);
-                          handleAnswer(opt);
-                        }}
+                        onClick={() => { setUserAnswer(opt); handleAnswer(opt); }}
                         disabled={isAnswered}
                       >
+                        <span className="mr-3 text-sm font-bold opacity-40 tabular-nums">{i + 1}</span>
                         {opt}
                       </Button>
                     ))}
@@ -268,6 +343,7 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
                   </div>
                   <div className="flex gap-2">
                     <Input
+                      ref={inputRef}
                       placeholder="Type the English word..."
                       value={userAnswer}
                       onChange={(e) => setUserAnswer(e.target.value)}
@@ -310,7 +386,7 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
 
       <div className="flex justify-end">
         {isAnswered && (
-          <Button size="lg" onClick={nextQuestion} className="h-14 px-8 rounded-xl shadow-lg">
+          <Button ref={nextBtnRef} size="lg" onClick={nextQuestion} className="h-14 px-8 rounded-xl shadow-lg">
             {currentIndex === questions.length - 1 ? 'Finish' : 'Next Question'} <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         )}
