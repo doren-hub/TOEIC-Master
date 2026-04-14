@@ -18,6 +18,7 @@ export interface UserProfile {
   name: string;
   targetScore: 600 | 730 | 860 | 990;
   currentSetIds: string[];
+  setsByLevel?: Partial<Record<string, string[]>>;
 }
 
 export interface UserData {
@@ -146,7 +147,22 @@ export function useLearningStore() {
 
     setUsers(prev => {
       const user = prev[currentUserId];
-      const updatedProfile = { ...user.profile, ...newSettings };
+      const oldProfile = user.profile;
+      const setsByLevel = { ...(oldProfile.setsByLevel || {}) };
+      let updatedProfile = { ...oldProfile, ...newSettings };
+
+      if (newSettings.targetScore && newSettings.targetScore !== oldProfile.targetScore) {
+        // Save current set for the old level
+        setsByLevel[String(oldProfile.targetScore)] = oldProfile.currentSetIds;
+        // Restore saved set for the new level (fall back to empty)
+        const savedSet = setsByLevel[String(newSettings.targetScore)] ?? [];
+        updatedProfile = { ...updatedProfile, currentSetIds: savedSet, setsByLevel };
+      } else if ('currentSetIds' in newSettings && newSettings.currentSetIds !== undefined) {
+        // Keep setsByLevel in sync whenever the current set changes
+        setsByLevel[String(updatedProfile.targetScore)] = newSettings.currentSetIds;
+        updatedProfile = { ...updatedProfile, setsByLevel };
+      }
+
       const updatedUsers = {
         ...prev,
         [currentUserId]: { ...user, profile: updatedProfile }

@@ -91,7 +91,7 @@ export default function App() {
                 <select 
                   className="w-full p-2 border rounded-md bg-background"
                   value={settings.targetScore}
-                  onChange={(e) => updateSettings({ targetScore: Number(e.target.value) as any, currentSetIds: [] })}
+                  onChange={(e) => updateSettings({ targetScore: Number(e.target.value) as any })}
                 >
                   <option value={600}>600</option>
                   <option value={730}>730</option>
