@@ -44,10 +44,31 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
   }, [questions, settings.currentSetIds]);
 
   const speak = (text: string) => {
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.9;
-    window.speechSynthesis.speak(utterance);
+    if (!window.speechSynthesis) return;
+    // 前の発話をキャンセルしてからキューに追加
+    window.speechSynthesis.cancel();
+
+    const doSpeak = () => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.9;
+      // 英語音声を優先選択
+      const voices = window.speechSynthesis.getVoices();
+      const enVoice = voices.find(v => v.lang.startsWith('en') && v.localService)
+                   ?? voices.find(v => v.lang.startsWith('en'));
+      if (enVoice) utterance.voice = enVoice;
+      window.speechSynthesis.speak(utterance);
+    };
+
+    // voices がまだ読み込まれていない場合は待機
+    if (window.speechSynthesis.getVoices().length > 0) {
+      doSpeak();
+    } else {
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.onvoiceschanged = null;
+        doSpeak();
+      };
+    }
   };
 
   // Generate questions on mount
@@ -91,12 +112,14 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
 
   const currentQuestion = questions[currentIndex];
 
-  // Auto-play for listening questions
+  // Auto-play for listening questions（モバイルでブロックされる場合は手動ボタンで対応）
   useEffect(() => {
     if (currentQuestion?.type === 'listening' && !isAnswered) {
-      speak(currentQuestion.word.term);
+      // 少し遅延を入れてアニメーション後に再生
+      const timer = setTimeout(() => speak(currentQuestion.word.term), 300);
+      return () => clearTimeout(timer);
     }
-  }, [currentIndex, currentQuestion, isAnswered]);
+  }, [currentIndex, currentQuestion?.type]);
 
   const handleAnswer = (answer: string) => {
     if (isAnswered) return;
@@ -163,13 +186,13 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
                   </CardTitle>
                 </div>
                 {currentQuestion.type === 'listening' && (
-                  <Button 
-                    variant="outline" 
-                    size="icon" 
-                    className="rounded-full h-12 w-12 hover:bg-primary hover:text-white transition-colors"
+                  <Button
+                    variant="default"
+                    className="rounded-full h-14 w-14 bg-primary hover:bg-primary/80 shadow-md flex-shrink-0"
                     onClick={() => speak(currentQuestion.word.term)}
+                    title="タップして再生"
                   >
-                    <Volume2 size={24} />
+                    <Volume2 size={26} />
                   </Button>
                 )}
               </div>
