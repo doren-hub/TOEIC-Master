@@ -95,13 +95,32 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
       
       let options: string[] = [];
       if (type === 'multiple_choice' || type === 'meaning' || type === 'listening') {
-        const distractors = TOEIC_WORDS
-          .filter(w => w.id !== word.id && w.meaning !== word.meaning && w.term !== word.term)
-          .sort(() => Math.random() - 0.5)
-          .slice(0, 3)
-          .map(w => type === 'multiple_choice' ? w.term : w.meaning);
-        
-        options = [...distractors, type === 'multiple_choice' ? word.term : word.meaning].sort(() => Math.random() - 0.5);
+        const getValue = (w: Word) => type === 'multiple_choice' ? w.term : w.meaning;
+        const correctVal = getValue(word);
+
+        // 選択肢の候補: 正解以外の単語
+        const pool = TOEIC_WORDS.filter(w => w.id !== word.id && getValue(w) !== correctVal);
+        const shuffle = <T,>(arr: T[]) => [...arr].sort(() => Math.random() - 0.5);
+
+        // 優先度1: 同カテゴリ & 同レベル（最も紛らわしい）
+        const tier1 = shuffle(pool.filter(w => w.category === word.category && w.level === word.level));
+        // 優先度2: 同レベル（異カテゴリ）
+        const tier2 = shuffle(pool.filter(w => w.level === word.level && w.category !== word.category));
+        // 優先度3: 任意（フォールバック）
+        const tier3 = shuffle(pool.filter(w => w.level !== word.level));
+
+        // 高品質な選択肢を優先して3つ選ぶ（明らかに違う選択肢は最大1つ）
+        const distractorWords: Word[] = [];
+        for (const tier of [tier1, tier2, tier3]) {
+          for (const w of tier) {
+            if (distractorWords.length >= 3) break;
+            distractorWords.push(w);
+          }
+          if (distractorWords.length >= 3) break;
+        }
+
+        const distractors = distractorWords.map(getValue);
+        options = [...distractors, correctVal].sort(() => Math.random() - 0.5);
       }
       
       return { word, type, options };
