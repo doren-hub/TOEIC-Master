@@ -38,6 +38,7 @@ export default function App() {
     startReview,
     replaceWord,
     addWord,
+    editWord,
     deleteWord,
   } = useLearningStore();
 
@@ -86,7 +87,7 @@ export default function App() {
       case 'analysis':
         return <Analysis progress={progress} onStartReview={startReview} onStartQuiz={() => setCurrentView('quiz')} />;
       case 'words':
-        return <WordManager allWords={allWords} onAddWord={addWord} onDeleteWord={deleteWord} />;
+        return <WordManager allWords={allWords} onAddWord={addWord} onEditWord={editWord} onDeleteWord={deleteWord} />;
       case 'settings':
         return (
           <div className="p-6 max-w-md mx-auto space-y-6">

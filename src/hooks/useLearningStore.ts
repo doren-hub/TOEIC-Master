@@ -27,6 +27,7 @@ export interface UserData {
   profile: UserProfile;
   progress: Record<string, Progress>;
   customWords?: Word[];
+  wordOverrides?: Record<string, Partial<Omit<Word, 'id'>>>;
 }
 
 export function useLearningStore() {
@@ -61,9 +62,12 @@ export function useLearningStore() {
 
   const excludedIds = new Set(settings.excludedWordIds || []);
   const userCustomWords: Word[] = currentUser?.customWords || [];
+  const wordOverrides = currentUser?.wordOverrides || {};
   const allWords: Word[] = [
-    ...TOEIC_WORDS.filter(w => !excludedIds.has(w.id)),
-    ...userCustomWords,
+    ...TOEIC_WORDS
+      .filter(w => !excludedIds.has(w.id))
+      .map(w => wordOverrides[w.id] ? { ...w, ...wordOverrides[w.id] } : w),
+    ...userCustomWords.map(w => wordOverrides[w.id] ? { ...w, ...wordOverrides[w.id] } : w),
   ];
 
   const saveToStorage = (updatedUsers: Record<string, UserData>, updatedCurrentId?: string) => {
@@ -261,6 +265,31 @@ export function useLearningStore() {
     });
   };
 
+  const editWord = (wordId: string, updates: Partial<Omit<Word, 'id'>>) => {
+    if (!currentUserId) return;
+    const isCustom = wordId.startsWith('custom_');
+    setUsers(prev => {
+      const user = prev[currentUserId];
+      let updatedUser: UserData;
+      if (isCustom) {
+        updatedUser = {
+          ...user,
+          customWords: (user.customWords || []).map(w =>
+            w.id === wordId ? { ...w, ...updates } : w
+          ),
+        };
+      } else {
+        updatedUser = {
+          ...user,
+          wordOverrides: { ...(user.wordOverrides || {}), [wordId]: { ...(user.wordOverrides?.[wordId] || {}), ...updates } },
+        };
+      }
+      const updatedUsers = { ...prev, [currentUserId]: updatedUser };
+      saveToStorage(updatedUsers);
+      return updatedUsers;
+    });
+  };
+
   const deleteWord = (wordId: string) => {
     if (!currentUserId) return;
     const isCustom = wordId.startsWith('custom_');
@@ -296,6 +325,7 @@ export function useLearningStore() {
     startReview,
     replaceWord,
     addWord,
+    editWord,
     deleteWord,
   };
 }

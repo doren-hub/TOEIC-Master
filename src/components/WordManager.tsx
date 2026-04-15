@@ -5,7 +5,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Plus, Trash2, Search, X, BookOpen } from 'lucide-react';
+import { Plus, Trash2, Search, X, BookOpen, Pencil, Check } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -18,12 +18,13 @@ const LEVELS = [600, 730, 860, 990] as const;
 interface WordManagerProps {
   allWords: Word[];
   onAddWord: (word: Omit<Word, 'id'>) => void;
+  onEditWord: (wordId: string, updates: Partial<Omit<Word, 'id'>>) => void;
   onDeleteWord: (wordId: string) => void;
 }
 
 const emptyForm = { term: '', meaning: '', example: '', level: 730 as (typeof LEVELS)[number], category: 'General' };
 
-export function WordManager({ allWords, onAddWord, onDeleteWord }: WordManagerProps) {
+export function WordManager({ allWords, onAddWord, onEditWord, onDeleteWord }: WordManagerProps) {
   const [search, setSearch] = useState('');
   const [filterLevel, setFilterLevel] = useState<number | 'all'>('all');
   const [filterType, setFilterType] = useState<'all' | 'custom' | 'builtin'>('all');
@@ -31,6 +32,8 @@ export function WordManager({ allWords, onAddWord, onDeleteWord }: WordManagerPr
   const [form, setForm] = useState(emptyForm);
   const [formError, setFormError] = useState('');
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editForm, setEditForm] = useState(emptyForm);
 
   const filtered = allWords.filter(w => {
     if (filterLevel !== 'all' && w.level !== filterLevel) return false;
@@ -58,6 +61,25 @@ export function WordManager({ allWords, onAddWord, onDeleteWord }: WordManagerPr
     setForm(emptyForm);
     setFormError('');
     setShowForm(false);
+  };
+
+  const startEdit = (word: Word) => {
+    setEditingId(word.id);
+    setEditForm({ term: word.term, meaning: word.meaning, example: word.example, level: word.level, category: word.category });
+    setConfirmDelete(null);
+  };
+
+  const saveEdit = () => {
+    if (!editingId) return;
+    if (!editForm.term.trim() || !editForm.meaning.trim()) return;
+    onEditWord(editingId, {
+      term: editForm.term.trim(),
+      meaning: editForm.meaning.trim(),
+      example: editForm.example.trim(),
+      level: editForm.level,
+      category: editForm.category,
+    });
+    setEditingId(null);
   };
 
   const levelColor = (level: number) => {
@@ -211,50 +233,93 @@ export function WordManager({ allWords, onAddWord, onDeleteWord }: WordManagerPr
           ) : (
             <div className="divide-y divide-border max-h-[60vh] overflow-y-auto">
               {filtered.map(word => (
-                <div key={word.id} className="flex items-center gap-4 px-6 py-3 hover:bg-muted/40 transition-colors group">
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-semibold">{word.term}</span>
-                      <Badge className={`text-xs px-2 py-0 ${levelColor(word.level)}`}>{word.level}</Badge>
-                      <Badge variant="secondary" className="text-xs px-2 py-0">{word.category}</Badge>
-                      {word.id.startsWith('custom_') && (
-                        <Badge className="text-xs px-2 py-0 bg-primary/10 text-primary">自作</Badge>
-                      )}
-                    </div>
-                    <p className="text-sm text-muted-foreground mt-0.5 truncate">{word.meaning}</p>
-                  </div>
-                  <div className="shrink-0">
-                    {confirmDelete === word.id ? (
-                      <div className="flex gap-2">
-                        <Button
-                          size="sm"
-                          variant="destructive"
-                          className="h-7 px-3 text-xs"
-                          onClick={() => { onDeleteWord(word.id); setConfirmDelete(null); }}
-                        >
-                          削除
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="h-7 px-3 text-xs"
-                          onClick={() => setConfirmDelete(null)}
-                        >
-                          キャンセル
+                <div key={word.id}>
+                  {editingId === word.id ? (
+                    /* ── インライン編集フォーム ── */
+                    <div className="px-6 py-4 bg-primary/5 border-l-2 border-primary space-y-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="space-y-1">
+                          <label className="text-xs font-medium text-muted-foreground">英単語</label>
+                          <Input value={editForm.term} onChange={e => setEditForm(f => ({ ...f, term: e.target.value }))} className="h-8" />
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-xs font-medium text-muted-foreground">意味</label>
+                          <Input value={editForm.meaning} onChange={e => setEditForm(f => ({ ...f, meaning: e.target.value }))} className="h-8" />
+                        </div>
+                        <div className="space-y-1 sm:col-span-2">
+                          <label className="text-xs font-medium text-muted-foreground">例文</label>
+                          <Input value={editForm.example} onChange={e => setEditForm(f => ({ ...f, example: e.target.value }))} className="h-8" />
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-xs font-medium text-muted-foreground">レベル</label>
+                          <select
+                            className="w-full h-8 rounded-lg border border-input bg-transparent px-2.5 text-sm outline-none focus-visible:border-ring"
+                            value={editForm.level}
+                            onChange={e => setEditForm(f => ({ ...f, level: Number(e.target.value) as (typeof LEVELS)[number] }))}
+                          >
+                            {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
+                          </select>
+                        </div>
+                        <div className="space-y-1">
+                          <label className="text-xs font-medium text-muted-foreground">カテゴリ</label>
+                          <select
+                            className="w-full h-8 rounded-lg border border-input bg-transparent px-2.5 text-sm outline-none focus-visible:border-ring"
+                            value={editForm.category}
+                            onChange={e => setEditForm(f => ({ ...f, category: e.target.value }))}
+                          >
+                            {CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
+                          </select>
+                        </div>
+                      </div>
+                      <div className="flex gap-2 justify-end">
+                        <Button variant="outline" size="sm" onClick={() => setEditingId(null)}>キャンセル</Button>
+                        <Button size="sm" onClick={saveEdit} disabled={!editForm.term.trim() || !editForm.meaning.trim()}>
+                          <Check className="mr-1 h-3 w-3" /> 保存
                         </Button>
                       </div>
-                    ) : (
-                      <Button
-                        size="icon"
-                        variant="ghost"
-                        className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity text-muted-foreground hover:text-red-500"
-                        onClick={() => setConfirmDelete(word.id)}
-                        title={word.id.startsWith('custom_') ? '削除' : '非表示にする'}
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </Button>
-                    )}
-                  </div>
+                    </div>
+                  ) : (
+                    /* ── 通常表示行 ── */
+                    <div className="flex items-center gap-4 px-6 py-3 hover:bg-muted/40 transition-colors group">
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-semibold">{word.term}</span>
+                          <Badge className={`text-xs px-2 py-0 ${levelColor(word.level)}`}>{word.level}</Badge>
+                          <Badge variant="secondary" className="text-xs px-2 py-0">{word.category}</Badge>
+                          {word.id.startsWith('custom_') && (
+                            <Badge className="text-xs px-2 py-0 bg-primary/10 text-primary">自作</Badge>
+                          )}
+                        </div>
+                        <p className="text-sm text-muted-foreground mt-0.5 truncate">{word.meaning}</p>
+                      </div>
+                      <div className="shrink-0 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {confirmDelete === word.id ? (
+                          <>
+                            <Button size="sm" variant="destructive" className="h-7 px-3 text-xs"
+                              onClick={() => { onDeleteWord(word.id); setConfirmDelete(null); }}>
+                              削除
+                            </Button>
+                            <Button size="sm" variant="outline" className="h-7 px-3 text-xs"
+                              onClick={() => setConfirmDelete(null)}>
+                              キャンセル
+                            </Button>
+                          </>
+                        ) : (
+                          <>
+                            <Button size="icon" variant="ghost" className="h-8 w-8 text-muted-foreground hover:text-primary"
+                              onClick={() => startEdit(word)} title="編集">
+                              <Pencil className="h-4 w-4" />
+                            </Button>
+                            <Button size="icon" variant="ghost" className="h-8 w-8 text-muted-foreground hover:text-red-500"
+                              onClick={() => setConfirmDelete(word.id)}
+                              title={word.id.startsWith('custom_') ? '削除' : '非表示にする'}>
+                              <Trash2 className="h-4 w-4" />
+                            </Button>
+                          </>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
