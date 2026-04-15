@@ -10,32 +10,35 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, BarChart2, Settings, Trophy, Brain, Users } from 'lucide-react';
+import { BookOpen, BarChart2, Settings, Trophy, Brain, Users, Library } from 'lucide-react';
 import { useLearningStore } from '@/src/hooks/useLearningStore';
 import { Dashboard } from '@/src/components/Dashboard';
 import { Quiz } from '@/src/components/Quiz';
 import { Analysis } from '@/src/components/Analysis';
 import { UserManagement } from '@/src/components/UserManagement';
+import { WordManager } from '@/src/components/WordManager';
 import { Button } from '@/components/ui/button';
-import { TOEIC_WORDS } from '@/src/data/words';
 
-type View = 'dashboard' | 'quiz' | 'analysis' | 'settings' | 'users';
+type View = 'dashboard' | 'quiz' | 'analysis' | 'settings' | 'users' | 'words';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<View>('dashboard');
-  const { 
-    progress, 
-    settings, 
+  const {
+    progress,
+    settings,
     users,
     currentUserId,
+    allWords,
     addUser,
     switchUser,
     deleteUser,
-    updateProgress, 
-    updateSettings, 
-    rotateSet, 
-    startReview, 
-    replaceWord 
+    updateProgress,
+    updateSettings,
+    rotateSet,
+    startReview,
+    replaceWord,
+    addWord,
+    deleteWord,
   } = useLearningStore();
 
   const renderView = () => {
@@ -67,20 +70,23 @@ export default function App() {
         );
       case 'dashboard':
         return (
-          <Dashboard 
-            settings={settings} 
-            progress={progress} 
-            onStartQuiz={() => setCurrentView('quiz')} 
-            onRotateSet={rotateSet} 
-            onUpdateSettings={updateSettings} 
+          <Dashboard
+            settings={settings}
+            progress={progress}
+            allWords={allWords}
+            onStartQuiz={() => setCurrentView('quiz')}
+            onRotateSet={rotateSet}
+            onUpdateSettings={updateSettings}
             onStartReview={startReview}
             onReplaceWord={replaceWord}
           />
         );
       case 'quiz':
-        return <Quiz settings={settings} progress={progress} onComplete={(wordId, isCorrect, format) => updateProgress(wordId, isCorrect, format)} onExit={() => setCurrentView('dashboard')} />;
+        return <Quiz settings={settings} progress={progress} allWords={allWords} onComplete={(wordId, isCorrect, format) => updateProgress(wordId, isCorrect, format)} onExit={() => setCurrentView('dashboard')} />;
       case 'analysis':
         return <Analysis progress={progress} onStartReview={startReview} onStartQuiz={() => setCurrentView('quiz')} />;
+      case 'words':
+        return <WordManager allWords={allWords} onAddWord={addWord} onDeleteWord={deleteWord} />;
       case 'settings':
         return (
           <div className="p-6 max-w-md mx-auto space-y-6">
@@ -105,12 +111,13 @@ export default function App() {
         );
       default:
         return (
-          <Dashboard 
-            settings={settings} 
-            progress={progress} 
-            onStartQuiz={() => setCurrentView('quiz')} 
-            onRotateSet={rotateSet} 
-            onUpdateSettings={updateSettings} 
+          <Dashboard
+            settings={settings}
+            progress={progress}
+            allWords={allWords}
+            onStartQuiz={() => setCurrentView('quiz')}
+            onRotateSet={rotateSet}
+            onUpdateSettings={updateSettings}
             onStartReview={startReview}
             onReplaceWord={replaceWord}
           />
@@ -132,6 +139,7 @@ export default function App() {
         <nav className="hidden md:flex items-center gap-1">
           <NavButton active={currentView === 'dashboard'} onClick={() => setCurrentView('dashboard')} icon={<Trophy size={18} />} label="Dashboard" />
           <NavButton active={currentView === 'analysis'} onClick={() => setCurrentView('analysis')} icon={<BarChart2 size={18} />} label="Analysis" />
+          <NavButton active={currentView === 'words'} onClick={() => setCurrentView('words')} icon={<Library size={18} />} label="Words" />
           <NavButton active={currentView === 'users'} onClick={() => setCurrentView('users')} icon={<Users size={18} />} label="Profiles" />
           <NavButton active={currentView === 'settings'} onClick={() => setCurrentView('settings')} icon={<Settings size={18} />} label="Settings" />
         </nav>
@@ -157,6 +165,7 @@ export default function App() {
         <MobileNavButton active={currentView === 'dashboard'} onClick={() => setCurrentView('dashboard')} icon={<Trophy size={24} />} />
         <MobileNavButton active={currentView === 'quiz'} onClick={() => setCurrentView('quiz')} icon={<BookOpen size={24} />} />
         <MobileNavButton active={currentView === 'analysis'} onClick={() => setCurrentView('analysis')} icon={<BarChart2 size={24} />} />
+        <MobileNavButton active={currentView === 'words'} onClick={() => setCurrentView('words')} icon={<Library size={24} />} />
         <MobileNavButton active={currentView === 'users'} onClick={() => setCurrentView('users')} icon={<Users size={24} />} />
         <MobileNavButton active={currentView === 'settings'} onClick={() => setCurrentView('settings')} icon={<Settings size={24} />} />
       </nav>

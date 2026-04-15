@@ -9,12 +9,13 @@ import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { Trophy, Target, BookOpen, Star, RefreshCw, CheckCircle, AlertCircle } from 'lucide-react';
 import { UserProfile, Progress as ProgressType } from '@/src/hooks/useLearningStore';
-import { TOEIC_WORDS } from '@/src/data/words';
+import { Word } from '@/src/data/words';
 import { useEffect } from 'react';
 
 interface DashboardProps {
   settings: UserProfile;
   progress: Record<string, ProgressType>;
+  allWords: Word[];
   onStartQuiz: () => void;
   onRotateSet: (words: any[]) => void;
   onUpdateSettings: (settings: Partial<UserProfile>) => void;
@@ -22,13 +23,13 @@ interface DashboardProps {
   onReplaceWord: (wordId: string, words: any[]) => boolean;
 }
 
-export function Dashboard({ settings, progress, onStartQuiz, onRotateSet, onUpdateSettings, onStartReview, onReplaceWord }: DashboardProps) {
-  const targetWords = TOEIC_WORDS.filter(w => w.level <= settings.targetScore);
+export function Dashboard({ settings, progress, allWords, onStartQuiz, onRotateSet, onUpdateSettings, onStartReview, onReplaceWord }: DashboardProps) {
+  const targetWords = allWords.filter(w => w.level <= settings.targetScore);
   
   const weakWordsCount = Object.values(progress).filter(p => p.incorrectCount > 0).length;
 
   const handleStartReview = () => {
-    const success = onStartReview(TOEIC_WORDS);
+    const success = onStartReview(allWords);
     if (success) {
       onStartQuiz();
     }
@@ -37,7 +38,7 @@ export function Dashboard({ settings, progress, onStartQuiz, onRotateSet, onUpda
   // Initialize set if empty
   useEffect(() => {
     if (settings.currentSetIds.length === 0) {
-      onRotateSet(TOEIC_WORDS);
+      onRotateSet(allWords);
     }
   }, [settings.currentSetIds, onRotateSet]);
 
@@ -48,7 +49,7 @@ export function Dashboard({ settings, progress, onStartQuiz, onRotateSet, onUpda
     });
   };
 
-  const currentSetWords = TOEIC_WORDS.filter(w => settings.currentSetIds.includes(w.id));
+  const currentSetWords = allWords.filter(w => settings.currentSetIds.includes(w.id));
   const requiredFormats = ['multiple_choice', 'spelling', 'meaning', 'listening'];
   
   const masteredInSet = currentSetWords.filter(w => {
@@ -79,7 +80,7 @@ export function Dashboard({ settings, progress, onStartQuiz, onRotateSet, onUpda
               <AlertCircle className="mr-2 h-5 w-5" /> Review ({weakWordsCount})
             </Button>
           )}
-          <Button variant="outline" size="lg" onClick={() => onRotateSet(TOEIC_WORDS)} className="h-14 px-6 rounded-2xl">
+          <Button variant="outline" size="lg" onClick={() => onRotateSet(allWords)} className="h-14 px-6 rounded-2xl">
             <RefreshCw className="mr-2 h-5 w-5" /> New Set
           </Button>
           <Button size="lg" onClick={onStartQuiz} className="h-14 px-8 text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all">
@@ -113,7 +114,7 @@ export function Dashboard({ settings, progress, onStartQuiz, onRotateSet, onUpda
                       variant="ghost"
                       size="icon"
                       className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-white shadow-sm border border-green-100 text-green-600 opacity-0 group-hover:opacity-100 transition-opacity"
-                      onClick={() => onReplaceWord(word.id, TOEIC_WORDS)}
+                      onClick={() => onReplaceWord(word.id, allWords)}
                       title="Replace with new word"
                     >
                       <RefreshCw className="h-4 w-4" />
@@ -141,7 +142,7 @@ export function Dashboard({ settings, progress, onStartQuiz, onRotateSet, onUpda
           {isSetMastered && (
             <div className="mt-6 p-4 bg-primary/5 rounded-xl flex items-center justify-between">
               <p className="text-sm font-medium">You've mastered this set! Ready for new words?</p>
-              <Button size="sm" onClick={() => onRotateSet(TOEIC_WORDS)}>
+              <Button size="sm" onClick={() => onRotateSet(allWords)}>
                 Get Next Set
               </Button>
             </div>
@@ -209,7 +210,7 @@ export function Dashboard({ settings, progress, onStartQuiz, onRotateSet, onUpda
                   {settings.targetScore === level && <Badge>Target</Badge>}
                 </CardTitle>
                 <CardDescription>
-                  {TOEIC_WORDS.filter(w => w.level === level).length} words
+                  {allWords.filter(w => w.level === level).length} words
                 </CardDescription>
               </CardHeader>
             </Card>

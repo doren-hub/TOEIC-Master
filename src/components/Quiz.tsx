@@ -11,12 +11,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import { TOEIC_WORDS, Word } from '@/src/data/words';
+import { Word } from '@/src/data/words';
 import { UserProfile, Progress as ProgressType } from '@/src/hooks/useLearningStore';
 
 interface QuizProps {
   settings: UserProfile;
   progress: Record<string, ProgressType>;
+  allWords: Word[];
   onComplete: (wordId: string, isCorrect: boolean, format: string) => void;
   onExit: () => void;
 }
@@ -29,7 +30,7 @@ interface Question {
   options?: string[];
 }
 
-export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
+export function Quiz({ settings, progress, allWords, onComplete, onExit }: QuizProps) {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState('');
@@ -83,8 +84,8 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
   useEffect(() => {
     // Use current set if available, otherwise fallback to random
     const pool = settings.currentSetIds.length > 0 
-      ? TOEIC_WORDS.filter(w => settings.currentSetIds.includes(w.id))
-      : TOEIC_WORDS.filter(w => w.level <= settings.targetScore).sort(() => Math.random() - 0.5).slice(0, 5);
+      ? allWords.filter(w => settings.currentSetIds.includes(w.id))
+      : allWords.filter(w => w.level <= settings.targetScore).sort(() => Math.random() - 0.5).slice(0, 5);
     
     // Duplicate pool to make 10 questions if needed, or just use pool
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
@@ -107,7 +108,7 @@ export function Quiz({ settings, progress, onComplete, onExit }: QuizProps) {
         const correctVal = getValue(word);
 
         // 選択肢の候補: 正解以外の単語
-        const pool = TOEIC_WORDS.filter(w => w.id !== word.id && getValue(w) !== correctVal);
+        const pool = allWords.filter(w => w.id !== word.id && getValue(w) !== correctVal);
         const shuffle = <T,>(arr: T[]) => [...arr].sort(() => Math.random() - 0.5);
 
         // 優先度1: 同カテゴリ & 同レベル（最も紛らわしい）

@@ -4,6 +4,7 @@
  */
 
 import { useState, useEffect } from 'react';
+import { TOEIC_WORDS, Word } from '@/src/data/words';
 
 export interface Progress {
   wordId: string;
@@ -19,11 +20,13 @@ export interface UserProfile {
   targetScore: 600 | 730 | 860 | 990;
   currentSetIds: string[];
   setsByLevel?: Partial<Record<string, string[]>>;
+  excludedWordIds?: string[];
 }
 
 export interface UserData {
   profile: UserProfile;
   progress: Record<string, Progress>;
+  customWords?: Word[];
 }
 
 export function useLearningStore() {
@@ -55,6 +58,13 @@ export function useLearningStore() {
     targetScore: 600,
     currentSetIds: []
   };
+
+  const excludedIds = new Set(settings.excludedWordIds || []);
+  const userCustomWords: Word[] = currentUser?.customWords || [];
+  const allWords: Word[] = [
+    ...TOEIC_WORDS.filter(w => !excludedIds.has(w.id)),
+    ...userCustomWords,
+  ];
 
   const saveToStorage = (updatedUsers: Record<string, UserData>, updatedCurrentId?: string) => {
     localStorage.setItem('toeic_users', JSON.stringify(updatedUsers));
@@ -235,18 +245,57 @@ export function useLearningStore() {
     return false;
   };
 
-  return { 
-    progress, 
-    settings, 
+  const addWord = (wordData: Omit<Word, 'id'>) => {
+    if (!currentUserId) return;
+    const id = `custom_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`;
+    const newWord: Word = { id, ...wordData };
+    setUsers(prev => {
+      const user = prev[currentUserId];
+      const updatedUser = {
+        ...user,
+        customWords: [...(user.customWords || []), newWord],
+      };
+      const updatedUsers = { ...prev, [currentUserId]: updatedUser };
+      saveToStorage(updatedUsers);
+      return updatedUsers;
+    });
+  };
+
+  const deleteWord = (wordId: string) => {
+    if (!currentUserId) return;
+    const isCustom = wordId.startsWith('custom_');
+    setUsers(prev => {
+      const user = prev[currentUserId];
+      const updatedUser = isCustom
+        ? { ...user, customWords: (user.customWords || []).filter(w => w.id !== wordId) }
+        : {
+            ...user,
+            profile: {
+              ...user.profile,
+              excludedWordIds: [...(user.profile.excludedWordIds || []), wordId],
+            },
+          };
+      const updatedUsers = { ...prev, [currentUserId]: updatedUser };
+      saveToStorage(updatedUsers);
+      return updatedUsers;
+    });
+  };
+
+  return {
+    progress,
+    settings,
     users,
     currentUserId,
+    allWords,
     addUser,
     switchUser,
     deleteUser,
-    updateProgress, 
-    updateSettings, 
-    rotateSet, 
-    startReview, 
-    replaceWord 
+    updateProgress,
+    updateSettings,
+    rotateSet,
+    startReview,
+    replaceWord,
+    addWord,
+    deleteWord,
   };
 }
