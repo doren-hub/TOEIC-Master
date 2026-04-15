@@ -290,6 +290,24 @@ export function useLearningStore() {
     });
   };
 
+  const restoreWord = (wordId: string) => {
+    if (!currentUserId) return;
+    setUsers(prev => {
+      const user = prev[currentUserId];
+      const newOverrides = { ...(user.wordOverrides || {}) };
+      delete newOverrides[wordId];
+      const newExcluded = (user.profile.excludedWordIds || []).filter(id => id !== wordId);
+      const updatedUser: UserData = {
+        ...user,
+        wordOverrides: newOverrides,
+        profile: { ...user.profile, excludedWordIds: newExcluded },
+      };
+      const updatedUsers = { ...prev, [currentUserId]: updatedUser };
+      saveToStorage(updatedUsers);
+      return updatedUsers;
+    });
+  };
+
   const deleteWord = (wordId: string) => {
     if (!currentUserId) return;
     const isCustom = wordId.startsWith('custom_');
@@ -316,6 +334,8 @@ export function useLearningStore() {
     users,
     currentUserId,
     allWords,
+    excludedWordIds: settings.excludedWordIds || [],
+    wordOverrides,
     addUser,
     switchUser,
     deleteUser,
@@ -326,6 +346,7 @@ export function useLearningStore() {
     replaceWord,
     addWord,
     editWord,
+    restoreWord,
     deleteWord,
   };
 }

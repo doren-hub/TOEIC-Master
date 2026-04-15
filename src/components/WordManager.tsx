@@ -5,7 +5,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Plus, Trash2, Search, X, BookOpen, Pencil, Check } from 'lucide-react';
+import { Plus, Trash2, Search, X, BookOpen, Pencil, Check, RotateCcw, EyeOff } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -15,16 +15,21 @@ import { Word } from '@/src/data/words';
 const CATEGORIES = ['Business', 'Finance', 'Marketing', 'Office', 'General', 'Technology', 'HR', 'Legal', 'Travel', 'Management'];
 const LEVELS = [600, 730, 860, 990] as const;
 
+import { TOEIC_WORDS } from '@/src/data/words';
+
 interface WordManagerProps {
   allWords: Word[];
+  excludedWordIds: string[];
+  wordOverrides: Record<string, Partial<Omit<Word, 'id'>>>;
   onAddWord: (word: Omit<Word, 'id'>) => void;
   onEditWord: (wordId: string, updates: Partial<Omit<Word, 'id'>>) => void;
+  onRestoreWord: (wordId: string) => void;
   onDeleteWord: (wordId: string) => void;
 }
 
 const emptyForm = { term: '', meaning: '', example: '', level: 730 as (typeof LEVELS)[number], category: 'General' };
 
-export function WordManager({ allWords, onAddWord, onEditWord, onDeleteWord }: WordManagerProps) {
+export function WordManager({ allWords, excludedWordIds, wordOverrides, onAddWord, onEditWord, onRestoreWord, onDeleteWord }: WordManagerProps) {
   const [search, setSearch] = useState('');
   const [filterLevel, setFilterLevel] = useState<number | 'all'>('all');
   const [filterType, setFilterType] = useState<'all' | 'custom' | 'builtin'>('all');
@@ -34,6 +39,12 @@ export function WordManager({ allWords, onAddWord, onEditWord, onDeleteWord }: W
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editForm, setEditForm] = useState(emptyForm);
+  const [showHidden, setShowHidden] = useState(false);
+
+  // 非表示になっている標準単語の元データ
+  const hiddenWords = TOEIC_WORDS.filter(w => excludedWordIds.includes(w.id));
+  // 編集済み（上書きあり）の標準単語ID一覧
+  const overriddenIds = new Set(Object.keys(wordOverrides).filter(id => !id.startsWith('custom_')));
 
   const filtered = allWords.filter(w => {
     if (filterLevel !== 'all' && w.level !== filterLevel) return false;
@@ -98,6 +109,15 @@ export function WordManager({ allWords, onAddWord, onEditWord, onDeleteWord }: W
           <p className="text-muted-foreground">
             全 {allWords.length} 語
             {customCount > 0 && <span className="ml-2 text-primary font-medium">(自作: {customCount} 語)</span>}
+            {hiddenWords.length > 0 && (
+              <button
+                className="ml-3 text-sm text-muted-foreground underline underline-offset-2 hover:text-foreground"
+                onClick={() => setShowHidden(v => !v)}
+              >
+                <EyeOff className="inline h-3 w-3 mr-1" />
+                非表示: {hiddenWords.length} 語
+              </button>
+            )}
           </p>
         </div>
         <Button onClick={() => { setShowForm(true); setFormError(''); }} className="rounded-xl">
@@ -306,6 +326,12 @@ export function WordManager({ allWords, onAddWord, onEditWord, onDeleteWord }: W
                           </>
                         ) : (
                           <>
+                            {!word.id.startsWith('custom_') && overriddenIds.has(word.id) && (
+                              <Button size="icon" variant="ghost" className="h-8 w-8 text-muted-foreground hover:text-amber-500"
+                                onClick={() => onRestoreWord(word.id)} title="元の内容に戻す">
+                                <RotateCcw className="h-4 w-4" />
+                              </Button>
+                            )}
                             <Button size="icon" variant="ghost" className="h-8 w-8 text-muted-foreground hover:text-primary"
                               onClick={() => startEdit(word)} title="編集">
                               <Pencil className="h-4 w-4" />
@@ -326,6 +352,46 @@ export function WordManager({ allWords, onAddWord, onEditWord, onDeleteWord }: W
           )}
         </CardContent>
       </Card>
+
+      {/* 非表示単語セクション */}
+      <AnimatePresence>
+        {showHidden && hiddenWords.length > 0 && (
+          <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
+            <Card className="border-none shadow-md border-dashed">
+              <CardHeader className="pb-2 flex flex-row items-center justify-between">
+                <div>
+                  <CardTitle className="text-base flex items-center gap-2">
+                    <EyeOff className="h-4 w-4 text-muted-foreground" /> 非表示の単語
+                  </CardTitle>
+                  <CardDescription>削除した標準単語です。「表示に戻す」で学習対象に復元できます。</CardDescription>
+                </div>
+                <Button variant="ghost" size="icon" onClick={() => setShowHidden(false)}>
+                  <X className="h-4 w-4" />
+                </Button>
+              </CardHeader>
+              <CardContent className="p-0">
+                <div className="divide-y divide-border">
+                  {hiddenWords.map(word => (
+                    <div key={word.id} className="flex items-center gap-4 px-6 py-3 bg-muted/30">
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="font-semibold text-muted-foreground">{word.term}</span>
+                          <Badge className={`text-xs px-2 py-0 ${levelColor(word.level)}`}>{word.level}</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground mt-0.5 truncate">{word.meaning}</p>
+                      </div>
+                      <Button size="sm" variant="outline" className="h-7 px-3 text-xs shrink-0"
+                        onClick={() => onRestoreWord(word.id)}>
+                        <RotateCcw className="mr-1 h-3 w-3" /> 表示に戻す
+                      </Button>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
