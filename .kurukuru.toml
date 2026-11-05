@@ -1,0 +1,27 @@
+version = "0.60.0"
+base_branch = "main"
+merge_method = "squash"
+# No unit-test script exists; production compilation is the current test gate.
+test = "npm run build"
+lint = "npm run lint"
+constraints = [
+  "Preserve the React/Vite application, vocabulary data and existing README; onboarding does not change product behavior.",
+  "Never read credentials, .env* or auth.json, and never run Gemini-backed vocabulary generation during verification.",
+  "Preserve project instructions in AGENTS.local.md and unique document content before regenerating managed documents.",
+  "Use existing self-hosted macOS CI capacity only; do not register runners or bypass permissions.",
+]
+review_model = "claude-opus-5-5"
+review_effort = "low"
+review_notes = [
+  "Require head-bound local build/lint evidence while Draft and standalone OK before Ready; reuse the same review session.",
+  "Merge only after kurukuru ci-wait exits 0 for the reviewed head; No CI is not sufficient.",
+]
+review_allowed = []
+
+[review]
+read_only = true
+
+[runner]
+kind = "codex"
+setup = "npm ci --no-audit --no-fund"
+deny_files = [".env*", "**/.env*", "auth.json", "**/auth.json"]
